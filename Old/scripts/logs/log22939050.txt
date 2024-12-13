@@ -1,0 +1,127 @@
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+03/13/2024 22:48:55 - INFO - __main__ - Distributed environment: MULTI_GPU  Backend: nccl
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda:0
+
+Mixed precision type: no
+
+loading configuration file config.json from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--datajuicer--LLaMA-1B-dj-refine-100B/snapshots/1bd6974aad6057a3e17b69fa4f818c07aedeae51/config.json
+Model config LlamaConfig {
+  "_name_or_path": "datajuicer/LLaMA-1B-dj-refine-100B",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "finetuning_task": "qnli",
+  "hidden_act": "silu",
+  "hidden_size": 2048,
+  "initializer_range": 0.02,
+  "intermediate_size": 5504,
+  "max_position_embeddings": 2048,
+  "max_sequence_length": 2048,
+  "model_type": "llama",
+  "num_attention_heads": 16,
+  "num_hidden_layers": 24,
+  "num_key_value_heads": 16,
+  "pad_token_id": 32004,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 10000.0,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.39.0.dev0",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+loading file tokenizer.model from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--datajuicer--LLaMA-1B-dj-refine-100B/snapshots/1bd6974aad6057a3e17b69fa4f818c07aedeae51/tokenizer.model
+loading file tokenizer.json from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--datajuicer--LLaMA-1B-dj-refine-100B/snapshots/1bd6974aad6057a3e17b69fa4f818c07aedeae51/tokenizer.json
+loading file added_tokens.json from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--datajuicer--LLaMA-1B-dj-refine-100B/snapshots/1bd6974aad6057a3e17b69fa4f818c07aedeae51/added_tokens.json
+loading file special_tokens_map.json from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--datajuicer--LLaMA-1B-dj-refine-100B/snapshots/1bd6974aad6057a3e17b69fa4f818c07aedeae51/special_tokens_map.json
+loading file tokenizer_config.json from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--datajuicer--LLaMA-1B-dj-refine-100B/snapshots/1bd6974aad6057a3e17b69fa4f818c07aedeae51/tokenizer_config.json
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+loading weights file pytorch_model.bin from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--datajuicer--LLaMA-1B-dj-refine-100B/snapshots/1bd6974aad6057a3e17b69fa4f818c07aedeae51/pytorch_model.bin
+Some weights of the model checkpoint at datajuicer/LLaMA-1B-dj-refine-100B were not used when initializing LlamaForSequenceClassification: ['lm_head.weight']
+- This IS expected if you are initializing LlamaForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing LlamaForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of LlamaForSequenceClassification were not initialized from the model checkpoint at datajuicer/LLaMA-1B-dj-refine-100B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Running tokenizer on dataset:   0%|          | 0/104743 [00:00<?, ? examples/s]Running tokenizer on dataset:   1%|          | 1000/104743 [00:00<00:15, 6508.38 examples/s]Running tokenizer on dataset:   2%|▏         | 2000/104743 [00:00<00:14, 7337.62 examples/s]Running tokenizer on dataset:   3%|▎         | 3000/104743 [00:00<00:13, 7610.69 examples/s]Running tokenizer on dataset:   4%|▍         | 4000/104743 [00:00<00:13, 7546.80 examples/s]Running tokenizer on dataset:   5%|▍         | 5000/104743 [00:00<00:13, 7602.62 examples/s]Running tokenizer on dataset:   6%|▌         | 6000/104743 [00:00<00:13, 7576.41 examples/s]Running tokenizer on dataset:   7%|▋         | 7000/104743 [00:00<00:12, 7987.72 examples/s]Running tokenizer on dataset:   8%|▊         | 8000/104743 [00:01<00:11, 8225.79 examples/s]Running tokenizer on dataset:   9%|▊         | 9000/104743 [00:01<00:11, 8372.62 examples/s]Running tokenizer on dataset:  10%|▉         | 10000/104743 [00:01<00:11, 8467.75 examples/s]Running tokenizer on dataset:  11%|█         | 11000/104743 [00:01<00:10, 8544.09 examples/s]Running tokenizer on dataset:  11%|█▏        | 12000/104743 [00:01<00:10, 8601.99 examples/s]Running tokenizer on dataset:  12%|█▏        | 13000/104743 [00:01<00:10, 8674.99 examples/s]Running tokenizer on dataset:  13%|█▎        | 14000/104743 [00:01<00:10, 8634.53 examples/s]Running tokenizer on dataset:  14%|█▍        | 15000/104743 [00:01<00:10, 8624.72 examples/s]Running tokenizer on dataset:  15%|█▌        | 16000/104743 [00:01<00:10, 8696.60 examples/s]Running tokenizer on dataset:  16%|█▌        | 17000/104743 [00:02<00:10, 8753.09 examples/s]Running tokenizer on dataset:  17%|█▋        | 18000/104743 [00:02<00:09, 8707.05 examples/s]Running tokenizer on dataset:  18%|█▊        | 19000/104743 [00:02<00:09, 8743.54 examples/s]Running tokenizer on dataset:  19%|█▉        | 20000/104743 [00:02<00:09, 8733.26 examples/s]Running tokenizer on dataset:  20%|██        | 21000/104743 [00:02<00:09, 8764.03 examples/s]Running tokenizer on dataset:  21%|██        | 22000/104743 [00:02<00:09, 8767.37 examples/s]Running tokenizer on dataset:  22%|██▏       | 23000/104743 [00:02<00:09, 8788.86 examples/s]Running tokenizer on dataset:  23%|██▎       | 24000/104743 [00:02<00:09, 8773.21 examples/s]Running tokenizer on dataset:  24%|██▍       | 25000/104743 [00:02<00:09, 8630.16 examples/s]Running tokenizer on dataset:  25%|██▍       | 26000/104743 [00:03<00:09, 8427.72 examples/s]Running tokenizer on dataset:  26%|██▌       | 27000/104743 [00:03<00:09, 8253.81 examples/s]Running tokenizer on dataset:  27%|██▋       | 28000/104743 [00:03<00:09, 8201.24 examples/s]Running tokenizer on dataset:  28%|██▊       | 29000/104743 [00:03<00:09, 8280.70 examples/s]Running tokenizer on dataset:  29%|██▊       | 30000/104743 [00:03<00:08, 8363.43 examples/s]Running tokenizer on dataset:  30%|██▉       | 31000/104743 [00:03<00:08, 8497.93 examples/s]Running tokenizer on dataset:  31%|███       | 32000/104743 [00:03<00:08, 8505.03 examples/s]Running tokenizer on dataset:  32%|███▏      | 33000/104743 [00:03<00:08, 8378.91 examples/s]Running tokenizer on dataset:  32%|███▏      | 34000/104743 [00:04<00:08, 8476.86 examples/s]Running tokenizer on dataset:  33%|███▎      | 35000/104743 [00:04<00:08, 8497.27 examples/s]Running tokenizer on dataset:  34%|███▍      | 36000/104743 [00:04<00:07, 8618.59 examples/s]Running tokenizer on dataset:  35%|███▌      | 37000/104743 [00:04<00:07, 8663.86 examples/s]Running tokenizer on dataset:  36%|███▋      | 38000/104743 [00:04<00:07, 8695.37 examples/s]Running tokenizer on dataset:  37%|███▋      | 39000/104743 [00:04<00:07, 8599.95 examples/s]Running tokenizer on dataset:  38%|███▊      | 40000/104743 [00:04<00:07, 8522.80 examples/s]Running tokenizer on dataset:  39%|███▉      | 41000/104743 [00:04<00:07, 8476.21 examples/s]Running tokenizer on dataset:  40%|████      | 42000/104743 [00:04<00:07, 8337.60 examples/s]Running tokenizer on dataset:  41%|████      | 43000/104743 [00:05<00:07, 8378.12 examples/s]Running tokenizer on dataset:  42%|████▏     | 44000/104743 [00:05<00:07, 8537.51 examples/s]Running tokenizer on dataset:  43%|████▎     | 45000/104743 [00:05<00:06, 8571.77 examples/s]Running tokenizer on dataset:  44%|████▍     | 46000/104743 [00:05<00:06, 8626.64 examples/s]Running tokenizer on dataset:  45%|████▍     | 47000/104743 [00:05<00:06, 8676.76 examples/s]Running tokenizer on dataset:  46%|████▌     | 48000/104743 [00:05<00:08, 6619.12 examples/s]Running tokenizer on dataset:  47%|████▋     | 49000/104743 [00:05<00:07, 7092.21 examples/s]Running tokenizer on dataset:  48%|████▊     | 50000/104743 [00:06<00:07, 7535.54 examples/s]Running tokenizer on dataset:  49%|████▊     | 51000/104743 [00:06<00:06, 7883.02 examples/s]Running tokenizer on dataset:  50%|████▉     | 52000/104743 [00:06<00:06, 8114.74 examples/s]Running tokenizer on dataset:  51%|█████     | 53000/104743 [00:06<00:06, 8334.56 examples/s]Running tokenizer on dataset:  52%|█████▏    | 54000/104743 [00:06<00:06, 8436.11 examples/s]Running tokenizer on dataset:  53%|█████▎    | 55000/104743 [00:06<00:05, 8409.01 examples/s]Running tokenizer on dataset:  53%|█████▎    | 56000/104743 [00:06<00:05, 8471.67 examples/s]Running tokenizer on dataset:  54%|█████▍    | 57000/104743 [00:06<00:05, 8466.92 examples/s]Running tokenizer on dataset:  55%|█████▌    | 58000/104743 [00:06<00:05, 8590.60 examples/s]Running tokenizer on dataset:  56%|█████▋    | 59000/104743 [00:07<00:05, 8615.59 examples/s]Running tokenizer on dataset:  57%|█████▋    | 60000/104743 [00:07<00:05, 8654.22 examples/s]Running tokenizer on dataset:  58%|█████▊    | 61000/104743 [00:07<00:05, 8707.98 examples/s]Running tokenizer on dataset:  59%|█████▉    | 62000/104743 [00:07<00:04, 8710.28 examples/s]Running tokenizer on dataset:  60%|██████    | 63000/104743 [00:07<00:04, 8629.97 examples/s]Running tokenizer on dataset:  61%|██████    | 64000/104743 [00:07<00:04, 8452.68 examples/s]Running tokenizer on dataset:  62%|██████▏   | 65000/104743 [00:07<00:04, 8399.31 examples/s]Running tokenizer on dataset:  63%|██████▎   | 66000/104743 [00:07<00:04, 8264.12 examples/s]Running tokenizer on dataset:  64%|██████▍   | 67000/104743 [00:08<00:04, 8331.66 examples/s]Running tokenizer on dataset:  65%|██████▍   | 68000/104743 [00:08<00:04, 8351.15 examples/s]Running tokenizer on dataset:  66%|██████▌   | 69000/104743 [00:08<00:04, 8419.76 examples/s]Running tokenizer on dataset:  67%|██████▋   | 70000/104743 [00:08<00:04, 8521.39 examples/s]Running tokenizer on dataset:  68%|██████▊   | 71000/104743 [00:08<00:03, 8533.95 examples/s]Running tokenizer on dataset:  69%|██████▊   | 72000/104743 [00:08<00:03, 8588.16 examples/s]Running tokenizer on dataset:  70%|██████▉   | 73000/104743 [00:08<00:03, 8667.45 examples/s]Running tokenizer on dataset:  71%|███████   | 74000/104743 [00:08<00:03, 8623.39 examples/s]Running tokenizer on dataset:  72%|███████▏  | 75000/104743 [00:08<00:03, 8695.26 examples/s]Running tokenizer on dataset:  73%|███████▎  | 76000/104743 [00:09<00:03, 8651.93 examples/s]Running tokenizer on dataset:  74%|███████▎  | 77000/104743 [00:09<00:03, 8549.24 examples/s]Running tokenizer on dataset:  74%|███████▍  | 78000/104743 [00:09<00:03, 8530.36 examples/s]Running tokenizer on dataset:  75%|███████▌  | 79000/104743 [00:09<00:03, 8316.08 examples/s]Running tokenizer on dataset:  76%|███████▋  | 80000/104743 [00:09<00:03, 8245.79 examples/s]Running tokenizer on dataset:  77%|███████▋  | 81000/104743 [00:09<00:02, 8367.18 examples/s]Running tokenizer on dataset:  78%|███████▊  | 82000/104743 [00:09<00:02, 8446.87 examples/s]Running tokenizer on dataset:  79%|███████▉  | 83000/104743 [00:09<00:02, 8499.62 examples/s]Running tokenizer on dataset:  80%|████████  | 84000/104743 [00:10<00:02, 8560.75 examples/s]Running tokenizer on dataset:  81%|████████  | 85000/104743 [00:10<00:02, 8599.57 examples/s]Running tokenizer on dataset:  82%|████████▏ | 86000/104743 [00:10<00:02, 6766.29 examples/s]Running tokenizer on dataset:  83%|████████▎ | 87000/104743 [00:10<00:02, 7208.81 examples/s]Running tokenizer on dataset:  84%|████████▍ | 88000/104743 [00:10<00:02, 7617.26 examples/s]Running tokenizer on dataset:  85%|████████▍ | 89000/104743 [00:10<00:01, 7892.59 examples/s]Running tokenizer on dataset:  86%|████████▌ | 90000/104743 [00:10<00:01, 8129.35 examples/s]Running tokenizer on dataset:  87%|████████▋ | 91000/104743 [00:10<00:01, 8357.93 examples/s]Running tokenizer on dataset:  88%|████████▊ | 92000/104743 [00:11<00:01, 8458.67 examples/s]Running tokenizer on dataset:  89%|████████▉ | 93000/104743 [00:11<00:01, 8561.87 examples/s]Running tokenizer on dataset:  90%|████████▉ | 94000/104743 [00:11<00:01, 8611.30 examples/s]Running tokenizer on dataset:  91%|█████████ | 95000/104743 [00:11<00:01, 8570.76 examples/s]Running tokenizer on dataset:  92%|█████████▏| 96000/104743 [00:11<00:01, 8537.23 examples/s]Running tokenizer on dataset:  93%|█████████▎| 97000/104743 [00:11<00:00, 8497.02 examples/s]Running tokenizer on dataset:  94%|█████████▎| 98000/104743 [00:11<00:00, 8549.28 examples/s]Running tokenizer on dataset:  95%|█████████▍| 99000/104743 [00:11<00:00, 8457.38 examples/s]Running tokenizer on dataset:  95%|█████████▌| 100000/104743 [00:11<00:00, 8397.16 examples/s]Running tokenizer on dataset:  96%|█████████▋| 101000/104743 [00:12<00:00, 8354.09 examples/s]Running tokenizer on dataset:  97%|█████████▋| 102000/104743 [00:12<00:00, 8350.27 examples/s]Running tokenizer on dataset:  98%|█████████▊| 103000/104743 [00:12<00:00, 8504.70 examples/s]Running tokenizer on dataset:  99%|█████████▉| 104000/104743 [00:12<00:00, 8593.73 examples/s]Running tokenizer on dataset: 100%|██████████| 104743/104743 [00:12<00:00, 8350.77 examples/s]
+Running tokenizer on dataset:   0%|          | 0/5463 [00:00<?, ? examples/s]Running tokenizer on dataset:  18%|█▊        | 1000/5463 [00:00<00:00, 6021.13 examples/s]Running tokenizer on dataset:  37%|███▋      | 2000/5463 [00:00<00:00, 6198.37 examples/s]Running tokenizer on dataset:  55%|█████▍    | 3000/5463 [00:00<00:00, 6306.77 examples/s]Running tokenizer on dataset:  73%|███████▎  | 4000/5463 [00:00<00:00, 6617.02 examples/s]Running tokenizer on dataset:  92%|█████████▏| 5000/5463 [00:00<00:00, 7093.39 examples/s]Running tokenizer on dataset: 100%|██████████| 5463/5463 [00:00<00:00, 6793.48 examples/s]
+Running tokenizer on dataset:   0%|          | 0/5463 [00:00<?, ? examples/s]Running tokenizer on dataset:  18%|█▊        | 1000/5463 [00:00<00:00, 6911.36 examples/s]Running tokenizer on dataset:  37%|███▋      | 2000/5463 [00:00<00:00, 6268.45 examples/s]Running tokenizer on dataset:  55%|█████▍    | 3000/5463 [00:00<00:00, 6731.94 examples/s]Running tokenizer on dataset:  73%|███████▎  | 4000/5463 [00:00<00:00, 4940.73 examples/s]Running tokenizer on dataset:  92%|█████████▏| 5000/5463 [00:00<00:00, 5767.00 examples/s]Running tokenizer on dataset: 100%|██████████| 5463/5463 [00:00<00:00, 5947.07 examples/s]
+03/13/2024 22:49:17 - INFO - __main__ - Sample 7885 of the training set: {'input_ids': [1, 1932, 4799, 24395, 1716, 278, 470, 284, 322, 8281, 284, 18346, 1907, 29892, 988, 947, 372, 4972, 1549, 29973, 1, 5593, 24395, 1549, 278, 470, 284, 322, 8281, 284, 18346, 1907, 29936, 372, 24536, 1549, 278, 301, 653, 23818, 29892, 1020, 1173, 29874, 322, 12246, 4161, 322, 1518, 4167, 278, 394, 345, 5079, 29889], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'labels': 0}.
+03/13/2024 22:49:17 - INFO - __main__ - Sample 84057 of the training set: {'input_ids': [1, 1724, 338, 278, 1473, 10150, 3489, 297, 3444, 29973, 1, 450, 7001, 7174, 634, 19270, 313, 29933, 11601, 29897, 338, 29892, 411, 967, 4333, 310, 901, 1135, 29871, 29941, 29892, 29900, 29900, 29900, 29892, 29900, 29900, 29900, 17735, 29892, 278, 1473, 10150, 3489, 297, 3444, 1156, 278, 7001, 7174, 316, 3444, 29889], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'labels': 0}.
+03/13/2024 22:49:17 - INFO - __main__ - Sample 78557 of the training set: {'input_ids': [1, 1932, 25549, 7802, 2787, 3362, 306, 29892, 373, 5069, 2625, 1258, 896, 8589, 29973, 1, 512, 278, 1494, 2440, 29892, 278, 21117, 1546, 4088, 5798, 20578, 306, 322, 1373, 1608, 2454, 15512, 7668, 8317, 29888, 721, 2363, 9548, 466, 295, 359, 975, 278, 4234, 29915, 29879, 9117, 8898, 373, 278, 321, 345, 310, 2787, 3362, 306, 8022, 630, 278, 4234, 29915, 29879, 8604, 9088, 29892, 322, 13931, 278, 4234, 964, 1023, 9209, 292, 6471, 29889], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'labels': 1}.
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/accelerate/accelerator.py:538: FutureWarning: The `use_fp16` property is deprecated and will be removed in version 1.0 of Accelerate use `Accelerator.mixed_precision == 'fp16'` instead.
+  warnings.warn(
+03/13/2024 22:49:18 - INFO - __main__ - ***** Running training *****
+03/13/2024 22:49:18 - INFO - __main__ -   Num examples = 104743
+03/13/2024 22:49:18 - INFO - __main__ -   Num Epochs = 3
+03/13/2024 22:49:18 - INFO - __main__ -   Instantaneous batch size per device = 7
+03/13/2024 22:49:18 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 7
+03/13/2024 22:49:18 - INFO - __main__ -   Gradient Accumulation steps = 1
+03/13/2024 22:49:18 - INFO - __main__ -   Total optimization steps = 44892
+  0%|          | 0/44892 [00:00<?, ?it/s]  0%|          | 1/44892 [00:01<17:10:14,  1.38s/it]  0%|          | 2/44892 [00:01<11:15:11,  1.11it/s]  0%|          | 3/44892 [00:02<9:10:26,  1.36it/s]   0%|          | 4/44892 [00:03<8:19:39,  1.50it/s]  0%|          | 5/44892 [00:03<7:47:02,  1.60it/s]  0%|          | 6/44892 [00:04<7:27:39,  1.67it/s]  0%|          | 7/44892 [00:04<7:19:37,  1.70it/s]  0%|          | 8/44892 [00:05<7:05:19,  1.76it/s]  0%|          | 9/44892 [00:05<7:03:48,  1.77it/s]  0%|          | 10/44892 [00:06<7:36:21,  1.64it/s]  0%|          | 11/44892 [00:07<8:00:34,  1.56it/s]  0%|          | 12/44892 [00:07<7:43:45,  1.61it/s]  0%|          | 13/44892 [00:08<7:29:52,  1.66it/s]  0%|          | 14/44892 [00:08<7:20:14,  1.70it/s]  0%|          | 15/44892 [00:09<6:43:05,  1.86it/s]  0%|          | 16/44892 [00:09<7:05:48,  1.76it/s]  0%|          | 17/44892 [00:10<6:58:59,  1.79it/s]  0%|          | 18/44892 [00:10<6:40:43,  1.87it/s]  0%|          | 19/44892 [00:11<6:28:21,  1.93it/s]  0%|          | 20/44892 [00:11<6:28:18,  1.93it/s]  0%|          | 21/44892 [00:12<6:55:32,  1.80it/s]  0%|          | 22/44892 [00:13<6:32:14,  1.91it/s]  0%|          | 23/44892 [00:13<6:21:33,  1.96it/s]  0%|          | 24/44892 [00:14<6:32:37,  1.90it/s]  0%|          | 25/44892 [00:14<6:35:10,  1.89it/s]  0%|          | 26/44892 [00:15<6:14:43,  2.00it/s]  0%|          | 27/44892 [00:15<6:13:44,  2.00it/s]  0%|          | 28/44892 [00:16<6:52:35,  1.81it/s]  0%|          | 29/44892 [00:16<6:40:54,  1.87it/s]  0%|          | 30/44892 [00:17<6:42:46,  1.86it/s]  0%|          | 31/44892 [00:17<6:47:51,  1.83it/s]  0%|          | 32/44892 [00:18<6:25:56,  1.94it/s]  0%|          | 33/44892 [00:18<6:10:23,  2.02it/s]  0%|          | 34/44892 [00:19<6:32:52,  1.90it/s]  0%|          | 35/44892 [00:19<6:14:08,  2.00it/s]  0%|          | 36/44892 [00:20<6:19:01,  1.97it/s]  0%|          | 37/44892 [00:20<6:25:14,  1.94it/s]  0%|          | 38/44892 [00:21<6:33:12,  1.90it/s]  0%|          | 39/44892 [00:21<6:39:07,  1.87it/s]  0%|          | 40/44892 [00:22<7:10:45,  1.74it/s]  0%|          | 41/44892 [00:23<7:27:28,  1.67it/s]  0%|          | 42/44892 [00:23<7:05:56,  1.75it/s]  0%|          | 43/44892 [00:24<7:29:01,  1.66it/s]  0%|          | 44/44892 [00:24<7:08:21,  1.74it/s]  0%|          | 45/44892 [00:25<7:23:18,  1.69it/s]Traceback (most recent call last):
+  File "run_glue_no_trainer.py", line 668, in <module>
+    main()
+  File "run_glue_no_trainer.py", line 560, in main
+    optimizer.step()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/accelerate/optimizer.py", line 145, in step
+    self.optimizer.step(closure)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/optim/lr_scheduler.py", line 75, in wrapper
+    return wrapped(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/optim/optimizer.py", line 385, in wrapper
+    out = func(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/optim/optimizer.py", line 76, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/optim/adamw.py", line 187, in step
+    adamw(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/optim/adamw.py", line 339, in adamw
+    func(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/optim/adamw.py", line 608, in _multi_tensor_adamw
+    exp_avg_sq_sqrt = torch._foreach_sqrt(device_exp_avg_sqs)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 44.00 MiB. GPU 0 has a total capacity of 31.74 GiB of which 9.31 MiB is free. Including non-PyTorch memory, this process has 31.73 GiB memory in use. Of the allocated memory 29.32 GiB is allocated by PyTorch, and 1.72 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+  0%|          | 45/44892 [00:26<7:25:08,  1.68it/s]
+[2024-03-13 22:49:49,976] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 73717) of binary: /jet/home/mmisra/miniconda3/envs/benchmark/bin/python
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 192, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 816, in <module>
+    main()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+run_glue_no_trainer.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-03-13_22:49:49
+  host      : v023.ib.bridges2.psc.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 73717)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: v023: task 0: Exited with exit code 1

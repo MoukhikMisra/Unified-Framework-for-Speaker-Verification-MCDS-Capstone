@@ -1,0 +1,6 @@
+usage: inference.py [-h] --ckpt CKPT [--num-images NUM_IMAGES]
+                    [--image-size IMAGE_SIZE] [--sampling-method {ddpm,ddim}]
+                    [--ddim-timesteps DDIM_TIMESTEPS] [--ddim-eta DDIM_ETA]
+                    [--compute-fid]
+inference.py: error: unrecognized arguments: --compute_fid
+srun: error: v007: task 0: Exited with exit code 2

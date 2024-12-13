@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "q1_3.py", line 43, in <module>
+    gen = Generator().cuda()
+  File "/ocean/projects/cis220031p/mmisra/miniconda3/envs/myenv/lib/python3.8/site-packages/torch/jit/_script.py", line 303, in init_then_script
+    original_init(self, *args, **kwargs)
+  File "/ocean/projects/cis220031p/mmisra/generative-modeling/gan/networks.py", line 282, in __init__
+    ResBlockUp(input_channels=128),
+  File "/ocean/projects/cis220031p/mmisra/miniconda3/envs/myenv/lib/python3.8/site-packages/torch/jit/_script.py", line 303, in init_then_script
+    original_init(self, *args, **kwargs)
+  File "/ocean/projects/cis220031p/mmisra/generative-modeling/gan/networks.py", line 99, in __init__
+    nn.BatchNorm2d(in_channels, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True),
+NameError: name 'in_channels' is not defined
+srun: error: v015: task 0: Exited with exit code 1

@@ -1,0 +1,91 @@
++ nvidia-smi
++ pwd
++ source /ocean/projects/cis220031p/mmisra/miniconda3/etc/profile.d/conda.sh
+++ export CONDA_EXE=/ocean/projects/cis220031p/mmisra/miniconda3/bin/conda
+++ CONDA_EXE=/ocean/projects/cis220031p/mmisra/miniconda3/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/ocean/projects/cis220031p/mmisra/miniconda3/bin/python
+++ CONDA_PYTHON_EXE=/ocean/projects/cis220031p/mmisra/miniconda3/bin/python
+++ '[' -z x ']'
++ conda activate myenv
++ local cmd=activate
++ case "$cmd" in
++ __conda_activate activate myenv
++ '[' -n '' ']'
++ local ask_conda
+++ PS1=
+++ __conda_exe shell.posix activate myenv
+++ /ocean/projects/cis220031p/mmisra/miniconda3/bin/conda shell.posix activate myenv
++ ask_conda='PS1='\''(myenv) '\''
+export PATH='\''/ocean/projects/cis220031p/mmisra/miniconda3/envs/myenv/bin:/ocean/projects/cis220031p/mmisra/miniconda3/condabin:/jet/home/mmisra/.local/bin:/jet/home/mmisra/bin:/opt/packages/psc.allocations.user/bin:/opt/packages/allocations/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/packages/interact/bin:/opt/puppetlabs/bin'\''
+export CONDA_PREFIX='\''/ocean/projects/cis220031p/mmisra/miniconda3/envs/myenv'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''myenv'\''
+export CONDA_PROMPT_MODIFIER='\''(myenv) '\''
+export CONDA_PREFIX_1='\''/ocean/projects/cis220031p/mmisra/miniconda3'\''
+export CONDA_EXE='\''/ocean/projects/cis220031p/mmisra/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/ocean/projects/cis220031p/mmisra/miniconda3/bin/python'\'''
++ eval 'PS1='\''(myenv) '\''
+export PATH='\''/ocean/projects/cis220031p/mmisra/miniconda3/envs/myenv/bin:/ocean/projects/cis220031p/mmisra/miniconda3/condabin:/jet/home/mmisra/.local/bin:/jet/home/mmisra/bin:/opt/packages/psc.allocations.user/bin:/opt/packages/allocations/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/packages/interact/bin:/opt/puppetlabs/bin'\''
+export CONDA_PREFIX='\''/ocean/projects/cis220031p/mmisra/miniconda3/envs/myenv'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''myenv'\''
+export CONDA_PROMPT_MODIFIER='\''(myenv) '\''
+export CONDA_PREFIX_1='\''/ocean/projects/cis220031p/mmisra/miniconda3'\''
+export CONDA_EXE='\''/ocean/projects/cis220031p/mmisra/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/ocean/projects/cis220031p/mmisra/miniconda3/bin/python'\'''
+++ PS1='(myenv) '
+++ export PATH=/ocean/projects/cis220031p/mmisra/miniconda3/envs/myenv/bin:/ocean/projects/cis220031p/mmisra/miniconda3/condabin:/jet/home/mmisra/.local/bin:/jet/home/mmisra/bin:/opt/packages/psc.allocations.user/bin:/opt/packages/allocations/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/packages/interact/bin:/opt/puppetlabs/bin
+++ PATH=/ocean/projects/cis220031p/mmisra/miniconda3/envs/myenv/bin:/ocean/projects/cis220031p/mmisra/miniconda3/condabin:/jet/home/mmisra/.local/bin:/jet/home/mmisra/bin:/opt/packages/psc.allocations.user/bin:/opt/packages/allocations/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/packages/interact/bin:/opt/puppetlabs/bin
+++ export CONDA_PREFIX=/ocean/projects/cis220031p/mmisra/miniconda3/envs/myenv
+++ CONDA_PREFIX=/ocean/projects/cis220031p/mmisra/miniconda3/envs/myenv
+++ export CONDA_SHLVL=2
+++ CONDA_SHLVL=2
+++ export CONDA_DEFAULT_ENV=myenv
+++ CONDA_DEFAULT_ENV=myenv
+++ export 'CONDA_PROMPT_MODIFIER=(myenv) '
+++ CONDA_PROMPT_MODIFIER='(myenv) '
+++ export CONDA_PREFIX_1=/ocean/projects/cis220031p/mmisra/miniconda3
+++ CONDA_PREFIX_1=/ocean/projects/cis220031p/mmisra/miniconda3
+++ export CONDA_EXE=/ocean/projects/cis220031p/mmisra/miniconda3/bin/conda
+++ CONDA_EXE=/ocean/projects/cis220031p/mmisra/miniconda3/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/ocean/projects/cis220031p/mmisra/miniconda3/bin/python
+++ CONDA_PYTHON_EXE=/ocean/projects/cis220031p/mmisra/miniconda3/bin/python
++ __conda_hashr
++ '[' -n '' ']'
++ '[' -n '' ']'
++ hash -r
++ cd /ocean/projects/cis220031p/mmisra/generative-modeling/vae
+++ date
++ echo 'START TIME: Mon Mar 11 13:14:51 EDT 2024'
++ LOG_PATH=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/logs/log22885988.txt
++ GPUS_PER_NODE=1
++ NNODES=1
+++ expr 1 '*' 1
++ NUM_PROCESSES=1
+++ head -n 1
+++ scontrol show hostnames v012
++ MASTER_ADDR=v012
++ MASTER_PORT=6000
++ echo 'MASTER_ADDR=v012 MASTER_PORT=6000 NUM_PROCESSES=1 GPUS_PER_NODE=1 NNODES=1 $SLURM_PROCID'
++ export LAUNCHER=python
++ LAUNCHER=python
++ export PROGRAM=train.py
++ PROGRAM=train.py
++ export 'CMD=python train.py'
++ CMD='python train.py'
++ tee -a /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/logs/log22885988.txt
++ srun --jobid 22885988 bash -c 'python train.py'
+++ date
++ echo 'END TIME: Mon Mar 11 13:16:18 EDT 2024'

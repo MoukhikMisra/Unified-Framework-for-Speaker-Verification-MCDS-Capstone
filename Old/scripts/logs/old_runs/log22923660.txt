@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "inference.py", line 5, in <module>
+    from model import DiffusionModel
+  File "/ocean/projects/cis220031p/mmisra/generative-modeling/diffusion/model.py", line 113
+    posterior_mean, posterior_variance, _ = self.get_posterior_parameters(x_0,x,t)
+                                                                                 ^
+IndentationError: unindent does not match any outer indentation level
+srun: error: v034: task 0: Exited with exit code 1

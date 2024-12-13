@@ -1,0 +1,31 @@
+Traceback (most recent call last):
+  File "q1_3.py", line 43, in <module>
+    gen = Generator().cuda()
+  File "/ocean/projects/cis220031p/mmisra/miniconda3/envs/myenv/lib/python3.8/site-packages/torch/jit/_script.py", line 303, in init_then_script
+    original_init(self, *args, **kwargs)
+  File "/ocean/projects/cis220031p/mmisra/generative-modeling/gan/networks.py", line 282, in __init__
+    ResBlockUp(input_channels=128),
+  File "/ocean/projects/cis220031p/mmisra/miniconda3/envs/myenv/lib/python3.8/site-packages/torch/jit/_script.py", line 303, in init_then_script
+    original_init(self, *args, **kwargs)
+  File "/ocean/projects/cis220031p/mmisra/generative-modeling/gan/networks.py", line 104, in __init__
+    UpSampleConv2D(n_filters, kernel_size=kernel_size, n_filters=n_filters, padding=1),
+  File "/ocean/projects/cis220031p/mmisra/miniconda3/envs/myenv/lib/python3.8/site-packages/torch/jit/_script.py", line 317, in init_then_script
+    ] = torch.jit._recursive.create_script_module(
+  File "/ocean/projects/cis220031p/mmisra/miniconda3/envs/myenv/lib/python3.8/site-packages/torch/jit/_recursive.py", line 558, in create_script_module
+    return create_script_module_impl(nn_module, concrete_type, stubs_fn)
+  File "/ocean/projects/cis220031p/mmisra/miniconda3/envs/myenv/lib/python3.8/site-packages/torch/jit/_recursive.py", line 635, in create_script_module_impl
+    create_methods_and_properties_from_stubs(
+  File "/ocean/projects/cis220031p/mmisra/miniconda3/envs/myenv/lib/python3.8/site-packages/torch/jit/_recursive.py", line 467, in create_methods_and_properties_from_stubs
+    concrete_type._create_methods_and_properties(
+  File "/ocean/projects/cis220031p/mmisra/miniconda3/envs/myenv/lib/python3.8/site-packages/torch/jit/annotations.py", line 191, in check_fn
+    raise torch.jit.frontend.FrontendError(
+torch.jit.frontend.FrontendError: Cannot instantiate class 'PixelShuffle' in a script function:
+  File "/ocean/projects/cis220031p/mmisra/generative-modeling/gan/networks.py", line 31
+        #################################################################
+        out = torch.repeat_interleave(input=x, repeats=int(self.upscale_factor**2), dim=1)
+        pixel_shuffle = nn.PixelShuffle(self.upscale_factor)
+                        ~~~~~~~~~~~~~~~ <--- HERE
+        out = pixel_shuffle(out)
+        out = self.conv(out)
+
+srun: error: v013: task 0: Exited with exit code 1

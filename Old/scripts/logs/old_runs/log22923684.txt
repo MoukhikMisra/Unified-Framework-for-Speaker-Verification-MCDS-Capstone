@@ -1,0 +1,18 @@
+  0%|          | 0/999 [00:00<?, ?it/s]  0%|          | 0/999 [00:13<?, ?it/s]
+Traceback (most recent call last):
+  File "inference.py", line 71, in <module>
+    generated_samples = diffusion.sample(img_shape)
+  File "/ocean/projects/cis220031p/mmisra/miniconda3/envs/myenv/lib/python3.8/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/ocean/projects/cis220031p/mmisra/generative-modeling/diffusion/model.py", line 189, in sample
+    return sample_fn(shape, z)
+  File "/ocean/projects/cis220031p/mmisra/miniconda3/envs/myenv/lib/python3.8/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/ocean/projects/cis220031p/mmisra/generative-modeling/diffusion/model.py", line 135, in sample_ddpm
+    img, _ = self.predict_denoised_at_prev_timestep(img, batched_times)
+  File "/ocean/projects/cis220031p/mmisra/miniconda3/envs/myenv/lib/python3.8/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/ocean/projects/cis220031p/mmisra/generative-modeling/diffusion/model.py", line 115, in predict_denoised_at_prev_timestep
+    if t > 0:
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+srun: error: v020: task 0: Exited with exit code 1

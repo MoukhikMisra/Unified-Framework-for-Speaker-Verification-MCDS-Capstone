@@ -1,0 +1,40 @@
+Mon Mar 11 13:14:51 2024       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  Tesla V100-SXM2-32GB           On  | 00000000:3A:00.0 Off |                    0 |
+| N/A   24C    P0              38W / 300W |      0MiB / 32768MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+/ocean/projects/cis220031p/mmisra/generative-modeling
+START TIME: Mon Mar 11 13:14:51 EDT 2024
+MASTER_ADDR=v012 MASTER_PORT=6000 NUM_PROCESSES=1 GPUS_PER_NODE=1 NNODES=1 $SLURM_PROCID
+Downloading https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz to data/cifar-10-python.tar.gz
+  0%|          | 0/170498071 [00:00<?, ?it/s]  1%|▏         | 2555904/170498071 [00:00<00:06, 25121123.23it/s]  5%|▍         | 8257536/170498071 [00:00<00:03, 43128762.98it/s]  9%|▊         | 14548992/170498071 [00:00<00:02, 52017005.66it/s] 13%|█▎        | 21331968/170498071 [00:00<00:02, 58097026.39it/s] 16%|█▋        | 28082176/170498071 [00:00<00:02, 61383983.35it/s] 20%|██        | 34242560/170498071 [00:00<00:02, 59284899.19it/s] 24%|██▍       | 40763392/170498071 [00:00<00:02, 61160075.89it/s] 28%|██▊       | 47284224/170498071 [00:00<00:01, 61765030.62it/s] 32%|███▏      | 54394880/170498071 [00:00<00:01, 64486332.69it/s] 36%|███▌      | 61014016/170498071 [00:01<00:01, 65000272.17it/s] 40%|███▉      | 67928064/170498071 [00:01<00:01, 66180862.61it/s] 44%|████▍     | 74743808/170498071 [00:01<00:01, 66758839.12it/s] 48%|████▊     | 81625088/170498071 [00:01<00:01, 67172317.73it/s] 52%|█████▏    | 88834048/170498071 [00:01<00:01, 68593921.98it/s] 56%|█████▌    | 95715328/170498071 [00:01<00:01, 68326664.72it/s] 60%|██████    | 102694912/170498071 [00:01<00:00, 68753513.41it/s] 64%|██████▍   | 109576192/170498071 [00:01<00:00, 68372728.57it/s] 69%|██████▊   | 116948992/170498071 [00:01<00:00, 69947716.24it/s] 73%|███████▎  | 123961344/170498071 [00:01<00:00, 68524423.89it/s] 77%|███████▋  | 130842624/170498071 [00:02<00:00, 68330338.42it/s] 81%|████████  | 137756672/170498071 [00:02<00:00, 68539631.40it/s] 85%|████████▍ | 144736256/170498071 [00:02<00:00, 68801655.35it/s] 89%|████████▉ | 151650304/170498071 [00:02<00:00, 67824601.77it/s] 93%|█████████▎| 158498816/170498071 [00:02<00:00, 67731841.03it/s] 97%|█████████▋| 165281792/170498071 [00:02<00:00, 67528877.58it/s]100%|██████████| 170498071/170498071 [00:02<00:00, 65222576.30it/s]
+/ocean/projects/cis220031p/mmisra/miniconda3/envs/myenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Extracting data/cifar-10-python.tar.gz to data
+Traceback (most recent call last):
+  File "train.py", line 153, in <module>
+    main(args.log_dir, loss_mode = args.loss_mode, beta_mode = args.beta_mode, latent_size = args.latent_size, num_epochs=20, target_beta_val = args.target_beta_val)
+  File "train.py", line 109, in main
+    optimizer = optim.Adam(model.parameters(), lr=lr)
+  File "/ocean/projects/cis220031p/mmisra/miniconda3/envs/myenv/lib/python3.8/site-packages/torch/optim/adam.py", line 45, in __init__
+    super().__init__(params, defaults)
+  File "/ocean/projects/cis220031p/mmisra/miniconda3/envs/myenv/lib/python3.8/site-packages/torch/optim/optimizer.py", line 273, in __init__
+    raise ValueError("optimizer got an empty parameter list")
+ValueError: optimizer got an empty parameter list
+srun: error: v012: task 0: Exited with exit code 1
+END TIME: Mon Mar 11 13:16:18 EDT 2024

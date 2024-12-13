@@ -1,0 +1,14 @@
+sampling loop time step:   0%|          | 0/100 [00:00<?, ?it/s]sampling loop time step:   0%|          | 0/100 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "inference.py", line 77, in <module>
+    generated_samples = diffusion.sample(img_shape)
+  File "/ocean/projects/cis220031p/mmisra/miniconda3/envs/myenv/lib/python3.8/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/ocean/projects/cis220031p/mmisra/generative-modeling/diffusion/model.py", line 221, in sample
+    return sample_fn(shape, z)
+  File "/ocean/projects/cis220031p/mmisra/generative-modeling/diffusion/model.py", line 212, in sample_ddim
+    img, _ = self.ddim_step(batch, device, tau_i, tau_isub1, img, self.model_predictions, self.alphas_cumprod, eta)
+  File "/ocean/projects/cis220031p/mmisra/generative-modeling/diffusion/model.py", line 171, in ddim_step
+    tau_i     = tau_i.repeat(batch).cuda().type(torch.int64)
+AttributeError: 'int' object has no attribute 'repeat'
+srun: error: v007: task 0: Exited with exit code 1

@@ -1,0 +1,5 @@
+  File "q1_4.py", line 34
+    loss = mse_loss(discrim_fake, torch.ones_like(discrim_fake))
+                                                               ^
+IndentationError: unindent does not match any outer indentation level
+srun: error: v016: task 0: Exited with exit code 1

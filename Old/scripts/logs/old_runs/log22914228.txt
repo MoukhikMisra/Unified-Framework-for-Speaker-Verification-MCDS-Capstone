@@ -1,0 +1,31 @@
+Files already downloaded and verified
+/ocean/projects/cis220031p/mmisra/miniconda3/envs/myenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+epoch 0
+epoch 1
+epoch 2
+epoch 3
+epoch 4
+4 {'recon_loss': 225.169, 'kl_loss': 56.354813}
+4 {'recon_loss': 221.3398, 'kl_loss': 56.7302}
+epoch 5
+epoch 6
+epoch 7
+epoch 8
+epoch 9
+9 {'recon_loss': 174.45708, 'kl_loss': 49.75078}
+9 {'recon_loss': 175.36336, 'kl_loss': 49.851753}
+epoch 10
+epoch 11
+epoch 12
+epoch 13
+epoch 14
+14 {'recon_loss': 156.70822, 'kl_loss': 50.785934}
+14 {'recon_loss': 157.87962, 'kl_loss': 50.424095}
+epoch 15
+epoch 16
+epoch 17
+epoch 18
+epoch 19
+19 {'recon_loss': 150.30904, 'kl_loss': 51.883102}
+19 {'recon_loss': 151.9281, 'kl_loss': 50.49659}

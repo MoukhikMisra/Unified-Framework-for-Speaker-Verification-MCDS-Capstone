@@ -1,0 +1,87 @@
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+03/13/2024 19:32:11 - INFO - __main__ - Distributed environment: MULTI_GPU  Backend: nccl
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda:0
+
+Mixed precision type: no
+
+loading configuration file config.json from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--datajuicer--LLaMA-1B-dj-refine-100B/snapshots/1bd6974aad6057a3e17b69fa4f818c07aedeae51/config.json
+Model config LlamaConfig {
+  "_name_or_path": "datajuicer/LLaMA-1B-dj-refine-100B",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "finetuning_task": "cola",
+  "hidden_act": "silu",
+  "hidden_size": 2048,
+  "initializer_range": 0.02,
+  "intermediate_size": 5504,
+  "max_position_embeddings": 2048,
+  "max_sequence_length": 2048,
+  "model_type": "llama",
+  "num_attention_heads": 16,
+  "num_hidden_layers": 24,
+  "num_key_value_heads": 16,
+  "pad_token_id": 32004,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 10000.0,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.39.0.dev0",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+loading file tokenizer.model from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--datajuicer--LLaMA-1B-dj-refine-100B/snapshots/1bd6974aad6057a3e17b69fa4f818c07aedeae51/tokenizer.model
+loading file tokenizer.json from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--datajuicer--LLaMA-1B-dj-refine-100B/snapshots/1bd6974aad6057a3e17b69fa4f818c07aedeae51/tokenizer.json
+loading file added_tokens.json from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--datajuicer--LLaMA-1B-dj-refine-100B/snapshots/1bd6974aad6057a3e17b69fa4f818c07aedeae51/added_tokens.json
+loading file special_tokens_map.json from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--datajuicer--LLaMA-1B-dj-refine-100B/snapshots/1bd6974aad6057a3e17b69fa4f818c07aedeae51/special_tokens_map.json
+loading file tokenizer_config.json from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--datajuicer--LLaMA-1B-dj-refine-100B/snapshots/1bd6974aad6057a3e17b69fa4f818c07aedeae51/tokenizer_config.json
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+loading weights file pytorch_model.bin from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--datajuicer--LLaMA-1B-dj-refine-100B/snapshots/1bd6974aad6057a3e17b69fa4f818c07aedeae51/pytorch_model.bin
+Some weights of the model checkpoint at datajuicer/LLaMA-1B-dj-refine-100B were not used when initializing LlamaForSequenceClassification: ['lm_head.weight']
+- This IS expected if you are initializing LlamaForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing LlamaForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of LlamaForSequenceClassification were not initialized from the model checkpoint at datajuicer/LLaMA-1B-dj-refine-100B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+srun: Job step aborted: Waiting up to 302 seconds for job step to finish.
+Running tokenizer on dataset:   0%|          | 0/8551 [00:00<?, ? examples/s]Running tokenizer on dataset:  12%|█▏        | 1000/8551 [00:21<02:42, 46.46 examples/s]slurmstepd: error: *** STEP 22934952.0 ON v002 CANCELLED AT 2024-03-13T19:34:21 ***
+[2024-03-13 19:34:21,543] torch.distributed.elastic.agent.server.api: [WARNING] Received Signals.SIGTERM death signal, shutting down workers
+[2024-03-13 19:34:21,556] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 89442 closing signal SIGTERM
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 192, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 816, in <module>
+    main()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 259, in launch_agent
+    result = agent.run()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/elastic/metrics/api.py", line 123, in wrapper
+    result = f(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/elastic/agent/server/api.py", line 727, in run
+    result = self._invoke_run(role)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/elastic/agent/server/api.py", line 868, in _invoke_run
+    time.sleep(monitor_interval)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/api.py", line 62, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 89388 got signal: 15
+srun: error: v002: task 0: Exited with exit code 1

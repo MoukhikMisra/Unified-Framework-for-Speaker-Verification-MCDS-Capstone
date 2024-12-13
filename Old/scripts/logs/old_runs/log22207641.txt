@@ -1,0 +1,2866 @@
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+02/12/2024 20:54:22 - WARNING - __main__ - Process rank: 0, device: cuda:0, n_gpu: 1, distributed training: True, 16-bits training: False
+02/12/2024 20:54:22 - INFO - __main__ - Training/evaluation parameters TrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+bf16=False,
+bf16_full_eval=False,
+data_seed=None,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+dispatch_batches=None,
+do_eval=True,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=no,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+fsdp=[],
+fsdp_config={'min_num_params': 0, 'xla': False, 'xla_fsdp_grad_ckpt': False},
+fsdp_min_num_params=0,
+fsdp_transformer_layer_cls_to_wrap=None,
+full_determinism=False,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+gradient_checkpointing_kwargs=None,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=False,
+hub_strategy=every_save,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+include_inputs_for_metrics=False,
+include_num_input_tokens_seen=False,
+include_tokens_per_second=False,
+jit_mode_eval=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=5e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=0,
+log_level=passive,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc7b/runs/Feb12_20-54-22_v005.ib.bridges2.psc.edu,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=steps,
+lr_scheduler_kwargs={},
+lr_scheduler_type=linear,
+max_grad_norm=1.0,
+max_steps=-1,
+metric_for_best_model=None,
+mp_parameters=,
+neftune_noise_alpha=None,
+no_cuda=False,
+num_train_epochs=3.0,
+optim=adamw_torch,
+optim_args=None,
+output_dir=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc7b,
+overwrite_output_dir=False,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=8,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+ray_scope=last,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc7b,
+save_on_each_node=False,
+save_only_model=False,
+save_safetensors=True,
+save_steps=500,
+save_strategy=steps,
+save_total_limit=None,
+seed=42,
+skip_memory_metrics=True,
+split_batches=False,
+tf32=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torchdynamo=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_cpu=False,
+use_ipex=False,
+use_legacy_prediction_loop=False,
+use_mps_device=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+)
+02/12/2024 20:54:22 - WARNING - __main__ - Process rank: 1, device: cuda:1, n_gpu: 1, distributed training: True, 16-bits training: False
+Overwrite dataset info from restored data version if exists.
+02/12/2024 20:54:24 - INFO - datasets.builder - Overwrite dataset info from restored data version if exists.
+Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+02/12/2024 20:54:24 - INFO - datasets.info - Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+Found cached dataset glue (/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c)
+02/12/2024 20:54:24 - INFO - datasets.builder - Found cached dataset glue (/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c)
+Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+02/12/2024 20:54:24 - INFO - datasets.info - Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 286, in hf_raise_for_status
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 286, in hf_raise_for_status
+    response.raise_for_status()
+    response.raise_for_status()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 398, in cached_file
+        resolved_file = hf_hub_download(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1368, in hf_hub_download
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 398, in cached_file
+    resolved_file = hf_hub_download(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+        raise head_call_error
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1238, in hf_hub_download
+return fn(*args, **kwargs)
+      File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1368, in hf_hub_download
+    metadata = get_hf_file_metadata(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    raise head_call_error
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1238, in hf_hub_download
+return fn(*args, **kwargs)    
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1631, in get_hf_file_metadata
+    metadata = get_hf_file_metadata(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    r = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 385, in _request_wrapper
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1631, in get_hf_file_metadata
+    response = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 409, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 302, in hf_raise_for_status
+r = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 385, in _request_wrapper
+        raise GatedRepoError(message, response) from e
+huggingface_hub.utils._errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-65cacbd0-74c35e6d229c99751a9084f8;273376c6-61e8-4007-8db8-67f2db4bddce)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b is gated. You must be authenticated to access it.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "run_glue.py", line 652, in <module>
+    response = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 409, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 302, in hf_raise_for_status
+    main()
+  File "run_glue.py", line 384, in main
+    raise GatedRepoError(message, response) from e
+huggingface_hub.utils._errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-65cacbd0-12dcd2c1614597147a149be4;c11d9a43-b407-4223-98f7-255aebe1f8bf)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b is gated. You must be authenticated to access it.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "run_glue.py", line 652, in <module>
+config = AutoConfig.from_pretrained(    
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/models/auto/configuration_auto.py", line 1103, in from_pretrained
+main()
+  File "run_glue.py", line 384, in main
+    config = AutoConfig.from_pretrained(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/models/auto/configuration_auto.py", line 1103, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 634, in get_config_dict
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 634, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 689, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 416, in cached_file
+        config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 689, in _get_config_dict
+raise EnvironmentError(
+OSError    : You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-2-7b.
+401 Client Error. (Request ID: Root=1-65cacbd0-74c35e6d229c99751a9084f8;273376c6-61e8-4007-8db8-67f2db4bddce)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b is gated. You must be authenticated to access it.
+resolved_config_file = cached_file(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 416, in cached_file
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-2-7b.
+401 Client Error. (Request ID: Root=1-65cacbd0-12dcd2c1614597147a149be4;c11d9a43-b407-4223-98f7-255aebe1f8bf)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b is gated. You must be authenticated to access it.
+[2024-02-12 20:54:27,044] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 91498) of binary: /jet/home/mmisra/miniconda3/envs/benchmark/bin/python
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 192, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 816, in <module>
+    main()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+run_glue.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-02-12_20:54:27
+  host      : v005.ib.bridges2.psc.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 91499)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-02-12_20:54:27
+  host      : v005.ib.bridges2.psc.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 91498)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: v005: task 0: Exited with exit code 1
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+02/12/2024 20:55:10 - WARNING - __main__ - Process rank: 0, device: cuda:0, n_gpu: 1, distributed training: True, 16-bits training: False
+02/12/2024 20:55:10 - INFO - __main__ - Training/evaluation parameters TrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+bf16=False,
+bf16_full_eval=False,
+data_seed=None,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+dispatch_batches=None,
+do_eval=True,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=no,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+fsdp=[],
+fsdp_config={'min_num_params': 0, 'xla': False, 'xla_fsdp_grad_ckpt': False},
+fsdp_min_num_params=0,
+fsdp_transformer_layer_cls_to_wrap=None,
+full_determinism=False,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+gradient_checkpointing_kwargs=None,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=False,
+hub_strategy=every_save,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+include_inputs_for_metrics=False,
+include_num_input_tokens_seen=False,
+include_tokens_per_second=False,
+jit_mode_eval=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=5e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=0,
+log_level=passive,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc7b/runs/Feb12_20-55-10_v005.ib.bridges2.psc.edu,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=steps,
+lr_scheduler_kwargs={},
+lr_scheduler_type=linear,
+max_grad_norm=1.0,
+max_steps=-1,
+metric_for_best_model=None,
+mp_parameters=,
+neftune_noise_alpha=None,
+no_cuda=False,
+num_train_epochs=3.0,
+optim=adamw_torch,
+optim_args=None,
+output_dir=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc7b,
+overwrite_output_dir=False,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=8,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+ray_scope=last,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc7b,
+save_on_each_node=False,
+save_only_model=False,
+save_safetensors=True,
+save_steps=500,
+save_strategy=steps,
+save_total_limit=None,
+seed=42,
+skip_memory_metrics=True,
+split_batches=False,
+tf32=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torchdynamo=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_cpu=False,
+use_ipex=False,
+use_legacy_prediction_loop=False,
+use_mps_device=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+)
+02/12/2024 20:55:11 - WARNING - __main__ - Process rank: 1, device: cuda:1, n_gpu: 1, distributed training: True, 16-bits training: False
+Overwrite dataset info from restored data version if exists.
+02/12/2024 20:55:11 - INFO - datasets.builder - Overwrite dataset info from restored data version if exists.
+Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+02/12/2024 20:55:11 - INFO - datasets.info - Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+Found cached dataset glue (/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c)
+02/12/2024 20:55:12 - INFO - datasets.builder - Found cached dataset glue (/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c)
+Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+02/12/2024 20:55:12 - INFO - datasets.info - Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 286, in hf_raise_for_status
+    response.raise_for_status()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 398, in cached_file
+    resolved_file = hf_hub_download(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1368, in hf_hub_download
+    raise head_call_error
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1238, in hf_hub_download
+    metadata = get_hf_file_metadata(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1631, in get_hf_file_metadata
+    r = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 385, in _request_wrapper
+    response = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 409, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 302, in hf_raise_for_status
+    raise GatedRepoError(message, response) from e
+huggingface_hub.utils._errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-65cacc00-510913150b7608300e7b5d4e;c7ff5977-4401-4d1e-b403-907af6ed4568)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b is gated. You must be authenticated to access it.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "run_glue.py", line 652, in <module>
+    main()
+  File "run_glue.py", line 384, in main
+    config = AutoConfig.from_pretrained(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/models/auto/configuration_auto.py", line 1103, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 634, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 689, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 416, in cached_file
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-2-7b.
+401 Client Error. (Request ID: Root=1-65cacc00-510913150b7608300e7b5d4e;c7ff5977-4401-4d1e-b403-907af6ed4568)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b is gated. You must be authenticated to access it.
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 286, in hf_raise_for_status
+    response.raise_for_status()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 398, in cached_file
+    resolved_file = hf_hub_download(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1368, in hf_hub_download
+    raise head_call_error
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1238, in hf_hub_download
+    metadata = get_hf_file_metadata(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1631, in get_hf_file_metadata
+    r = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 385, in _request_wrapper
+    response = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 409, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 302, in hf_raise_for_status
+    raise GatedRepoError(message, response) from e
+huggingface_hub.utils._errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-65cacc00-2689e22a324dd4765399b2a6;cc6e48d0-287e-4138-8d56-220a088d65ac)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b is gated. You must be authenticated to access it.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "run_glue.py", line 652, in <module>
+    main()
+  File "run_glue.py", line 384, in main
+    config = AutoConfig.from_pretrained(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/models/auto/configuration_auto.py", line 1103, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 634, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 689, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 416, in cached_file
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-2-7b.
+401 Client Error. (Request ID: Root=1-65cacc00-2689e22a324dd4765399b2a6;cc6e48d0-287e-4138-8d56-220a088d65ac)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b is gated. You must be authenticated to access it.
+[2024-02-12 20:55:17,712] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 92034) of binary: /jet/home/mmisra/miniconda3/envs/benchmark/bin/python
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 192, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 816, in <module>
+    main()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+run_glue.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-02-12_20:55:17
+  host      : v005.ib.bridges2.psc.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 92035)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-02-12_20:55:17
+  host      : v005.ib.bridges2.psc.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 92034)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: v005: task 0: Exited with exit code 1
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+02/12/2024 20:55:47 - WARNING - __main__ - Process rank: 0, device: cuda:0, n_gpu: 1, distributed training: True, 16-bits training: False
+02/12/2024 20:55:47 - INFO - __main__ - Training/evaluation parameters TrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+bf16=False,
+bf16_full_eval=False,
+data_seed=None,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+dispatch_batches=None,
+do_eval=True,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=no,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+fsdp=[],
+fsdp_config={'min_num_params': 0, 'xla': False, 'xla_fsdp_grad_ckpt': False},
+fsdp_min_num_params=0,
+fsdp_transformer_layer_cls_to_wrap=None,
+full_determinism=False,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+gradient_checkpointing_kwargs=None,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=False,
+hub_strategy=every_save,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+include_inputs_for_metrics=False,
+include_num_input_tokens_seen=False,
+include_tokens_per_second=False,
+jit_mode_eval=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=5e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=0,
+log_level=passive,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc7b/runs/Feb12_20-55-47_v005.ib.bridges2.psc.edu,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=steps,
+lr_scheduler_kwargs={},
+lr_scheduler_type=linear,
+max_grad_norm=1.0,
+max_steps=-1,
+metric_for_best_model=None,
+mp_parameters=,
+neftune_noise_alpha=None,
+no_cuda=False,
+num_train_epochs=3.0,
+optim=adamw_torch,
+optim_args=None,
+output_dir=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc7b,
+overwrite_output_dir=False,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=8,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+ray_scope=last,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc7b,
+save_on_each_node=False,
+save_only_model=False,
+save_safetensors=True,
+save_steps=500,
+save_strategy=steps,
+save_total_limit=None,
+seed=42,
+skip_memory_metrics=True,
+split_batches=False,
+tf32=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torchdynamo=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_cpu=False,
+use_ipex=False,
+use_legacy_prediction_loop=False,
+use_mps_device=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+)
+02/12/2024 20:55:47 - WARNING - __main__ - Process rank: 1, device: cuda:1, n_gpu: 1, distributed training: True, 16-bits training: False
+Overwrite dataset info from restored data version if exists.
+02/12/2024 20:55:48 - INFO - datasets.builder - Overwrite dataset info from restored data version if exists.
+Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+02/12/2024 20:55:48 - INFO - datasets.info - Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+Found cached dataset glue (/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c)
+02/12/2024 20:55:48 - INFO - datasets.builder - Found cached dataset glue (/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c)
+Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+02/12/2024 20:55:48 - INFO - datasets.info - Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 286, in hf_raise_for_status
+    response.raise_for_status()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 398, in cached_file
+    resolved_file = hf_hub_download(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1368, in hf_hub_download
+    raise head_call_error
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1238, in hf_hub_download
+    metadata = get_hf_file_metadata(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1631, in get_hf_file_metadata
+    r = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 385, in _request_wrapper
+    response = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 409, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 302, in hf_raise_for_status
+    raise GatedRepoError(message, response) from e
+huggingface_hub.utils._errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-65cacc24-12a219fc620c40d27bd68315;a175b01c-f3ef-46b0-add7-74704a0e37f3)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b is gated. You must be authenticated to access it.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "run_glue.py", line 652, in <module>
+    main()
+  File "run_glue.py", line 384, in main
+    config = AutoConfig.from_pretrained(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/models/auto/configuration_auto.py", line 1103, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 634, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 689, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 416, in cached_file
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-2-7b.
+401 Client Error. (Request ID: Root=1-65cacc24-12a219fc620c40d27bd68315;a175b01c-f3ef-46b0-add7-74704a0e37f3)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b is gated. You must be authenticated to access it.
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 286, in hf_raise_for_status
+    response.raise_for_status()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 398, in cached_file
+    resolved_file = hf_hub_download(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1368, in hf_hub_download
+    raise head_call_error
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1238, in hf_hub_download
+    metadata = get_hf_file_metadata(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1631, in get_hf_file_metadata
+    r = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 385, in _request_wrapper
+    response = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 409, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 302, in hf_raise_for_status
+    raise GatedRepoError(message, response) from e
+huggingface_hub.utils._errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-65cacc25-37c4773b1967d84b14273a9c;3cf236f3-a102-4ad3-8726-ce138c374ccd)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b is gated. You must be authenticated to access it.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "run_glue.py", line 652, in <module>
+    main()
+  File "run_glue.py", line 384, in main
+    config = AutoConfig.from_pretrained(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/models/auto/configuration_auto.py", line 1103, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 634, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 689, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 416, in cached_file
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-2-7b.
+401 Client Error. (Request ID: Root=1-65cacc25-37c4773b1967d84b14273a9c;3cf236f3-a102-4ad3-8726-ce138c374ccd)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b is gated. You must be authenticated to access it.
+[2024-02-12 20:55:53,361] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 92266) of binary: /jet/home/mmisra/miniconda3/envs/benchmark/bin/python
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 192, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 816, in <module>
+    main()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+run_glue.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-02-12_20:55:53
+  host      : v005.ib.bridges2.psc.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 92267)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-02-12_20:55:53
+  host      : v005.ib.bridges2.psc.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 92266)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: v005: task 0: Exited with exit code 1
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+02/12/2024 20:56:21 - WARNING - __main__ - Process rank: 0, device: cuda:0, n_gpu: 1, distributed training: True, 16-bits training: False
+02/12/2024 20:56:21 - INFO - __main__ - Training/evaluation parameters TrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+bf16=False,
+bf16_full_eval=False,
+data_seed=None,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+dispatch_batches=None,
+do_eval=True,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=no,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+fsdp=[],
+fsdp_config={'min_num_params': 0, 'xla': False, 'xla_fsdp_grad_ckpt': False},
+fsdp_min_num_params=0,
+fsdp_transformer_layer_cls_to_wrap=None,
+full_determinism=False,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+gradient_checkpointing_kwargs=None,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=False,
+hub_strategy=every_save,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+include_inputs_for_metrics=False,
+include_num_input_tokens_seen=False,
+include_tokens_per_second=False,
+jit_mode_eval=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=5e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=0,
+log_level=passive,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc7b/runs/Feb12_20-56-21_v005.ib.bridges2.psc.edu,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=steps,
+lr_scheduler_kwargs={},
+lr_scheduler_type=linear,
+max_grad_norm=1.0,
+max_steps=-1,
+metric_for_best_model=None,
+mp_parameters=,
+neftune_noise_alpha=None,
+no_cuda=False,
+num_train_epochs=3.0,
+optim=adamw_torch,
+optim_args=None,
+output_dir=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc7b,
+overwrite_output_dir=False,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=8,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+ray_scope=last,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc7b,
+save_on_each_node=False,
+save_only_model=False,
+save_safetensors=True,
+save_steps=500,
+save_strategy=steps,
+save_total_limit=None,
+seed=42,
+skip_memory_metrics=True,
+split_batches=False,
+tf32=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torchdynamo=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_cpu=False,
+use_ipex=False,
+use_legacy_prediction_loop=False,
+use_mps_device=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+)
+02/12/2024 20:56:21 - WARNING - __main__ - Process rank: 1, device: cuda:1, n_gpu: 1, distributed training: True, 16-bits training: False
+Overwrite dataset info from restored data version if exists.
+02/12/2024 20:56:22 - INFO - datasets.builder - Overwrite dataset info from restored data version if exists.
+Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+02/12/2024 20:56:22 - INFO - datasets.info - Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+Found cached dataset glue (/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c)
+02/12/2024 20:56:22 - INFO - datasets.builder - Found cached dataset glue (/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c)
+Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+02/12/2024 20:56:22 - INFO - datasets.info - Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 286, in hf_raise_for_status
+    response.raise_for_status()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 398, in cached_file
+    resolved_file = hf_hub_download(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1368, in hf_hub_download
+    raise head_call_error
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1238, in hf_hub_download
+    metadata = get_hf_file_metadata(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1631, in get_hf_file_metadata
+    r = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 385, in _request_wrapper
+    response = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 409, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 302, in hf_raise_for_status
+    raise GatedRepoError(message, response) from e
+huggingface_hub.utils._errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-65cacc46-1fa135ae3ea129997971f985;6ae8dcb7-064d-4ce8-8440-a8e1a1b58837)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b is gated. You must be authenticated to access it.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "run_glue.py", line 652, in <module>
+    main()
+  File "run_glue.py", line 384, in main
+    config = AutoConfig.from_pretrained(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/models/auto/configuration_auto.py", line 1103, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 634, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 689, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 416, in cached_file
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-2-7b.
+401 Client Error. (Request ID: Root=1-65cacc46-1fa135ae3ea129997971f985;6ae8dcb7-064d-4ce8-8440-a8e1a1b58837)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b is gated. You must be authenticated to access it.
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 286, in hf_raise_for_status
+    response.raise_for_status()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 398, in cached_file
+    resolved_file = hf_hub_download(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1368, in hf_hub_download
+    raise head_call_error
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1238, in hf_hub_download
+    metadata = get_hf_file_metadata(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1631, in get_hf_file_metadata
+    r = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 385, in _request_wrapper
+    response = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 409, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 302, in hf_raise_for_status
+    raise GatedRepoError(message, response) from e
+huggingface_hub.utils._errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-65cacc46-037dcd92026ef2ee0908b54c;4d83df88-016f-47c1-84e4-81c1f2d2fca8)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b is gated. You must be authenticated to access it.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "run_glue.py", line 652, in <module>
+    main()
+  File "run_glue.py", line 384, in main
+    config = AutoConfig.from_pretrained(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/models/auto/configuration_auto.py", line 1103, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 634, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 689, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 416, in cached_file
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-2-7b.
+401 Client Error. (Request ID: Root=1-65cacc46-037dcd92026ef2ee0908b54c;4d83df88-016f-47c1-84e4-81c1f2d2fca8)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b is gated. You must be authenticated to access it.
+[2024-02-12 20:56:24,613] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 92360) of binary: /jet/home/mmisra/miniconda3/envs/benchmark/bin/python
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 192, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 816, in <module>
+    main()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+run_glue.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-02-12_20:56:24
+  host      : v005.ib.bridges2.psc.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 92361)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-02-12_20:56:24
+  host      : v005.ib.bridges2.psc.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 92360)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: v005: task 0: Exited with exit code 1
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+02/12/2024 20:59:22 - WARNING - __main__ - Process rank: 0, device: cuda:0, n_gpu: 1, distributed training: True, 16-bits training: False
+02/12/2024 20:59:22 - INFO - __main__ - Training/evaluation parameters TrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+bf16=False,
+bf16_full_eval=False,
+data_seed=None,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+dispatch_batches=None,
+do_eval=True,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=no,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+fsdp=[],
+fsdp_config={'min_num_params': 0, 'xla': False, 'xla_fsdp_grad_ckpt': False},
+fsdp_min_num_params=0,
+fsdp_transformer_layer_cls_to_wrap=None,
+full_determinism=False,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+gradient_checkpointing_kwargs=None,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=False,
+hub_strategy=every_save,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+include_inputs_for_metrics=False,
+include_num_input_tokens_seen=False,
+include_tokens_per_second=False,
+jit_mode_eval=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=5e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=0,
+log_level=passive,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc7b/runs/Feb12_20-59-22_v005.ib.bridges2.psc.edu,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=steps,
+lr_scheduler_kwargs={},
+lr_scheduler_type=linear,
+max_grad_norm=1.0,
+max_steps=-1,
+metric_for_best_model=None,
+mp_parameters=,
+neftune_noise_alpha=None,
+no_cuda=False,
+num_train_epochs=3.0,
+optim=adamw_torch,
+optim_args=None,
+output_dir=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc7b,
+overwrite_output_dir=False,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=8,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+ray_scope=last,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc7b,
+save_on_each_node=False,
+save_only_model=False,
+save_safetensors=True,
+save_steps=500,
+save_strategy=steps,
+save_total_limit=None,
+seed=42,
+skip_memory_metrics=True,
+split_batches=False,
+tf32=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torchdynamo=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_cpu=False,
+use_ipex=False,
+use_legacy_prediction_loop=False,
+use_mps_device=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+)
+02/12/2024 20:59:22 - WARNING - __main__ - Process rank: 1, device: cuda:1, n_gpu: 1, distributed training: True, 16-bits training: False
+Overwrite dataset info from restored data version if exists.
+02/12/2024 20:59:23 - INFO - datasets.builder - Overwrite dataset info from restored data version if exists.
+Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+02/12/2024 20:59:23 - INFO - datasets.info - Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+Found cached dataset glue (/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c)
+02/12/2024 20:59:23 - INFO - datasets.builder - Found cached dataset glue (/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c)
+Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+02/12/2024 20:59:23 - INFO - datasets.info - Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 286, in hf_raise_for_status
+    response.raise_for_status()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 398, in cached_file
+    resolved_file = hf_hub_download(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1368, in hf_hub_download
+    raise head_call_error
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1238, in hf_hub_download
+    metadata = get_hf_file_metadata(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1631, in get_hf_file_metadata
+    r = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 385, in _request_wrapper
+    response = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 409, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 302, in hf_raise_for_status
+    raise GatedRepoError(message, response) from e
+huggingface_hub.utils._errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-65caccfb-654ed2e9712d2964299ff60f;cb0a1f09-5b8f-4187-ad30-75e197851f3a)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b is gated. You must be authenticated to access it.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "run_glue.py", line 652, in <module>
+    main()
+  File "run_glue.py", line 384, in main
+    config = AutoConfig.from_pretrained(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/models/auto/configuration_auto.py", line 1103, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 634, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 689, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 416, in cached_file
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-2-7b.
+401 Client Error. (Request ID: Root=1-65caccfb-654ed2e9712d2964299ff60f;cb0a1f09-5b8f-4187-ad30-75e197851f3a)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b is gated. You must be authenticated to access it.
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 286, in hf_raise_for_status
+    response.raise_for_status()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 398, in cached_file
+    resolved_file = hf_hub_download(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1368, in hf_hub_download
+    raise head_call_error
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1238, in hf_hub_download
+    metadata = get_hf_file_metadata(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1631, in get_hf_file_metadata
+    r = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 385, in _request_wrapper
+    response = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 409, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 302, in hf_raise_for_status
+    raise GatedRepoError(message, response) from e
+huggingface_hub.utils._errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-65caccfb-71e8283b778c77cf67b002c7;0484f6b1-d065-4c1f-8685-bb0a44406740)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b is gated. You must be authenticated to access it.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "run_glue.py", line 652, in <module>
+    main()
+  File "run_glue.py", line 384, in main
+    config = AutoConfig.from_pretrained(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/models/auto/configuration_auto.py", line 1103, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 634, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 689, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 416, in cached_file
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-2-7b.
+401 Client Error. (Request ID: Root=1-65caccfb-71e8283b778c77cf67b002c7;0484f6b1-d065-4c1f-8685-bb0a44406740)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b is gated. You must be authenticated to access it.
+[2024-02-12 20:59:25,315] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 92468) of binary: /jet/home/mmisra/miniconda3/envs/benchmark/bin/python
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 192, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 816, in <module>
+    main()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+run_glue.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-02-12_20:59:25
+  host      : v005.ib.bridges2.psc.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 92469)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-02-12_20:59:25
+  host      : v005.ib.bridges2.psc.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 92468)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: v005: task 0: Exited with exit code 1
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+02/12/2024 21:00:24 - WARNING - __main__ - Process rank: 0, device: cuda:0, n_gpu: 1, distributed training: True, 16-bits training: False
+02/12/2024 21:00:24 - INFO - __main__ - Training/evaluation parameters TrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+bf16=False,
+bf16_full_eval=False,
+data_seed=None,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+dispatch_batches=None,
+do_eval=True,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=no,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+fsdp=[],
+fsdp_config={'min_num_params': 0, 'xla': False, 'xla_fsdp_grad_ckpt': False},
+fsdp_min_num_params=0,
+fsdp_transformer_layer_cls_to_wrap=None,
+full_determinism=False,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+gradient_checkpointing_kwargs=None,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=False,
+hub_strategy=every_save,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+include_inputs_for_metrics=False,
+include_num_input_tokens_seen=False,
+include_tokens_per_second=False,
+jit_mode_eval=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=5e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=0,
+log_level=passive,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc7b/runs/Feb12_21-00-23_v005.ib.bridges2.psc.edu,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=steps,
+lr_scheduler_kwargs={},
+lr_scheduler_type=linear,
+max_grad_norm=1.0,
+max_steps=-1,
+metric_for_best_model=None,
+mp_parameters=,
+neftune_noise_alpha=None,
+no_cuda=False,
+num_train_epochs=3.0,
+optim=adamw_torch,
+optim_args=None,
+output_dir=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc7b,
+overwrite_output_dir=False,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=8,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+ray_scope=last,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc7b,
+save_on_each_node=False,
+save_only_model=False,
+save_safetensors=True,
+save_steps=500,
+save_strategy=steps,
+save_total_limit=None,
+seed=42,
+skip_memory_metrics=True,
+split_batches=False,
+tf32=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torchdynamo=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_cpu=False,
+use_ipex=False,
+use_legacy_prediction_loop=False,
+use_mps_device=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+)
+02/12/2024 21:00:24 - WARNING - __main__ - Process rank: 1, device: cuda:1, n_gpu: 1, distributed training: True, 16-bits training: False
+Overwrite dataset info from restored data version if exists.
+02/12/2024 21:00:25 - INFO - datasets.builder - Overwrite dataset info from restored data version if exists.
+Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+02/12/2024 21:00:25 - INFO - datasets.info - Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+Found cached dataset glue (/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c)
+02/12/2024 21:00:25 - INFO - datasets.builder - Found cached dataset glue (/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c)
+Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+02/12/2024 21:00:25 - INFO - datasets.info - Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 286, in hf_raise_for_status
+    response.raise_for_status()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 398, in cached_file
+    resolved_file = hf_hub_download(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1368, in hf_hub_download
+    raise head_call_error
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1238, in hf_hub_download
+    metadata = get_hf_file_metadata(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1631, in get_hf_file_metadata
+    r = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 385, in _request_wrapper
+    response = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 409, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 302, in hf_raise_for_status
+    raise GatedRepoError(message, response) from e
+huggingface_hub.utils._errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-65cacd39-60a2c4bc6b49670807801c4b;491dfed8-1e6a-4a84-ae6a-0d1b7071aab5)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b is gated. You must be authenticated to access it.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "run_glue.py", line 652, in <module>
+    main()
+  File "run_glue.py", line 384, in main
+    config = AutoConfig.from_pretrained(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/models/auto/configuration_auto.py", line 1103, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 634, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 689, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 416, in cached_file
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-2-7b.
+401 Client Error. (Request ID: Root=1-65cacd39-60a2c4bc6b49670807801c4b;491dfed8-1e6a-4a84-ae6a-0d1b7071aab5)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b is gated. You must be authenticated to access it.
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 286, in hf_raise_for_status
+    response.raise_for_status()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 398, in cached_file
+    resolved_file = hf_hub_download(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1368, in hf_hub_download
+    raise head_call_error
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1238, in hf_hub_download
+    metadata = get_hf_file_metadata(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1631, in get_hf_file_metadata
+    r = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 385, in _request_wrapper
+    response = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 409, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 302, in hf_raise_for_status
+    raise GatedRepoError(message, response) from e
+huggingface_hub.utils._errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-65cacd39-3679381a73ff1a5e30b518d6;2e699af8-92da-4436-bf01-2e9ea58cedc4)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b is gated. You must be authenticated to access it.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "run_glue.py", line 652, in <module>
+    main()
+  File "run_glue.py", line 384, in main
+    config = AutoConfig.from_pretrained(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/models/auto/configuration_auto.py", line 1103, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 634, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 689, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 416, in cached_file
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-2-7b.
+401 Client Error. (Request ID: Root=1-65cacd39-3679381a73ff1a5e30b518d6;2e699af8-92da-4436-bf01-2e9ea58cedc4)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b is gated. You must be authenticated to access it.
+[2024-02-12 21:00:27,133] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 92563) of binary: /jet/home/mmisra/miniconda3/envs/benchmark/bin/python
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 192, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 816, in <module>
+    main()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+run_glue.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-02-12_21:00:27
+  host      : v005.ib.bridges2.psc.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 92564)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-02-12_21:00:27
+  host      : v005.ib.bridges2.psc.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 92563)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: v005: task 0: Exited with exit code 1
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+02/12/2024 21:02:00 - WARNING - __main__ - Process rank: 0, device: cuda:0, n_gpu: 1, distributed training: True, 16-bits training: False
+02/12/2024 21:02:00 - INFO - __main__ - Training/evaluation parameters TrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+bf16=False,
+bf16_full_eval=False,
+data_seed=None,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+dispatch_batches=None,
+do_eval=True,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=no,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+fsdp=[],
+fsdp_config={'min_num_params': 0, 'xla': False, 'xla_fsdp_grad_ckpt': False},
+fsdp_min_num_params=0,
+fsdp_transformer_layer_cls_to_wrap=None,
+full_determinism=False,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+gradient_checkpointing_kwargs=None,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=False,
+hub_strategy=every_save,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+include_inputs_for_metrics=False,
+include_num_input_tokens_seen=False,
+include_tokens_per_second=False,
+jit_mode_eval=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=5e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=0,
+log_level=passive,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc7b/runs/Feb12_21-02-00_v005.ib.bridges2.psc.edu,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=steps,
+lr_scheduler_kwargs={},
+lr_scheduler_type=linear,
+max_grad_norm=1.0,
+max_steps=-1,
+metric_for_best_model=None,
+mp_parameters=,
+neftune_noise_alpha=None,
+no_cuda=False,
+num_train_epochs=3.0,
+optim=adamw_torch,
+optim_args=None,
+output_dir=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc7b,
+overwrite_output_dir=False,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=8,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+ray_scope=last,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc7b,
+save_on_each_node=False,
+save_only_model=False,
+save_safetensors=True,
+save_steps=500,
+save_strategy=steps,
+save_total_limit=None,
+seed=42,
+skip_memory_metrics=True,
+split_batches=False,
+tf32=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torchdynamo=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_cpu=False,
+use_ipex=False,
+use_legacy_prediction_loop=False,
+use_mps_device=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+)
+02/12/2024 21:02:00 - WARNING - __main__ - Process rank: 1, device: cuda:1, n_gpu: 1, distributed training: True, 16-bits training: False
+Overwrite dataset info from restored data version if exists.
+02/12/2024 21:02:02 - INFO - datasets.builder - Overwrite dataset info from restored data version if exists.
+Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+02/12/2024 21:02:02 - INFO - datasets.info - Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+Found cached dataset glue (/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c)
+02/12/2024 21:02:02 - INFO - datasets.builder - Found cached dataset glue (/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c)
+Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+02/12/2024 21:02:02 - INFO - datasets.info - Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 286, in hf_raise_for_status
+    response.raise_for_status()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 398, in cached_file
+    resolved_file = hf_hub_download(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1368, in hf_hub_download
+    raise head_call_error
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1238, in hf_hub_download
+    metadata = get_hf_file_metadata(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1631, in get_hf_file_metadata
+    r = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 385, in _request_wrapper
+    response = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 409, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 302, in hf_raise_for_status
+    raise GatedRepoError(message, response) from e
+huggingface_hub.utils._errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-65cacd9a-660119e5032609321543e16e;63ab5494-507d-4288-8abe-a484773a0554)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b is gated. You must be authenticated to access it.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "run_glue.py", line 652, in <module>
+    main()
+  File "run_glue.py", line 384, in main
+    config = AutoConfig.from_pretrained(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/models/auto/configuration_auto.py", line 1103, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 634, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 689, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 416, in cached_file
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-2-7b.
+401 Client Error. (Request ID: Root=1-65cacd9a-660119e5032609321543e16e;63ab5494-507d-4288-8abe-a484773a0554)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b is gated. You must be authenticated to access it.
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 286, in hf_raise_for_status
+    response.raise_for_status()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 398, in cached_file
+    resolved_file = hf_hub_download(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1368, in hf_hub_download
+    raise head_call_error
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1238, in hf_hub_download
+    metadata = get_hf_file_metadata(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1631, in get_hf_file_metadata
+    r = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 385, in _request_wrapper
+    response = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 409, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 302, in hf_raise_for_status
+    raise GatedRepoError(message, response) from e
+huggingface_hub.utils._errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-65cacd9a-6fe47cda23ec3a590be7313f;18621802-35a3-48b3-b2f4-cbd234f453ae)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b is gated. You must be authenticated to access it.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "run_glue.py", line 652, in <module>
+    main()
+  File "run_glue.py", line 384, in main
+    config = AutoConfig.from_pretrained(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/models/auto/configuration_auto.py", line 1103, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 634, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 689, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 416, in cached_file
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-2-7b.
+401 Client Error. (Request ID: Root=1-65cacd9a-6fe47cda23ec3a590be7313f;18621802-35a3-48b3-b2f4-cbd234f453ae)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b is gated. You must be authenticated to access it.
+[2024-02-12 21:02:03,830] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 92672) of binary: /jet/home/mmisra/miniconda3/envs/benchmark/bin/python
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 192, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 816, in <module>
+    main()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+run_glue.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-02-12_21:02:03
+  host      : v005.ib.bridges2.psc.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 92673)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-02-12_21:02:03
+  host      : v005.ib.bridges2.psc.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 92672)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: v005: task 0: Exited with exit code 1
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+02/12/2024 21:03:39 - WARNING - __main__ - Process rank: 0, device: cuda:0, n_gpu: 1, distributed training: True, 16-bits training: False
+02/12/2024 21:03:39 - INFO - __main__ - Training/evaluation parameters TrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+bf16=False,
+bf16_full_eval=False,
+data_seed=None,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+dispatch_batches=None,
+do_eval=True,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=no,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+fsdp=[],
+fsdp_config={'min_num_params': 0, 'xla': False, 'xla_fsdp_grad_ckpt': False},
+fsdp_min_num_params=0,
+fsdp_transformer_layer_cls_to_wrap=None,
+full_determinism=False,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+gradient_checkpointing_kwargs=None,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=False,
+hub_strategy=every_save,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+include_inputs_for_metrics=False,
+include_num_input_tokens_seen=False,
+include_tokens_per_second=False,
+jit_mode_eval=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=5e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=0,
+log_level=passive,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc7b/runs/Feb12_21-03-39_v005.ib.bridges2.psc.edu,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=steps,
+lr_scheduler_kwargs={},
+lr_scheduler_type=linear,
+max_grad_norm=1.0,
+max_steps=-1,
+metric_for_best_model=None,
+mp_parameters=,
+neftune_noise_alpha=None,
+no_cuda=False,
+num_train_epochs=3.0,
+optim=adamw_torch,
+optim_args=None,
+output_dir=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc7b,
+overwrite_output_dir=False,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=8,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+ray_scope=last,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc7b,
+save_on_each_node=False,
+save_only_model=False,
+save_safetensors=True,
+save_steps=500,
+save_strategy=steps,
+save_total_limit=None,
+seed=42,
+skip_memory_metrics=True,
+split_batches=False,
+tf32=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torchdynamo=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_cpu=False,
+use_ipex=False,
+use_legacy_prediction_loop=False,
+use_mps_device=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+)
+02/12/2024 21:03:40 - WARNING - __main__ - Process rank: 1, device: cuda:1, n_gpu: 1, distributed training: True, 16-bits training: False
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 286, in hf_raise_for_status
+    response.raise_for_status()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 398, in cached_file
+    resolved_file = hf_hub_download(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1368, in hf_hub_download
+    raise head_call_error
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1238, in hf_hub_download
+    metadata = get_hf_file_metadata(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1631, in get_hf_file_metadata
+    r = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 385, in _request_wrapper
+    response = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 409, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 302, in hf_raise_for_status
+    raise GatedRepoError(message, response) from e
+huggingface_hub.utils._errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-65cacdfd-68b895996991c74f01105ac1;053ca87e-68e3-4699-b6d9-6bc7402d116c)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b is gated. You must be authenticated to access it.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "run_glue.py", line 652, in <module>
+    main()
+  File "run_glue.py", line 384, in main
+    config = AutoConfig.from_pretrained(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/models/auto/configuration_auto.py", line 1103, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 634, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 689, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 416, in cached_file
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-2-7b.
+401 Client Error. (Request ID: Root=1-65cacdfd-68b895996991c74f01105ac1;053ca87e-68e3-4699-b6d9-6bc7402d116c)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b is gated. You must be authenticated to access it.
+Overwrite dataset info from restored data version if exists.
+02/12/2024 21:03:41 - INFO - datasets.builder - Overwrite dataset info from restored data version if exists.
+Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+02/12/2024 21:03:41 - INFO - datasets.info - Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+Found cached dataset glue (/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c)
+02/12/2024 21:03:41 - INFO - datasets.builder - Found cached dataset glue (/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c)
+Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+02/12/2024 21:03:41 - INFO - datasets.info - Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 286, in hf_raise_for_status
+    response.raise_for_status()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 398, in cached_file
+    resolved_file = hf_hub_download(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1368, in hf_hub_download
+    raise head_call_error
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1238, in hf_hub_download
+    metadata = get_hf_file_metadata(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1631, in get_hf_file_metadata
+    r = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 385, in _request_wrapper
+    response = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 409, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 302, in hf_raise_for_status
+    raise GatedRepoError(message, response) from e
+huggingface_hub.utils._errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-65cacdfd-46faaa8e763806a075c5022e;5a2b061d-702b-4c55-9a64-f83aa2977ab7)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b is gated. You must be authenticated to access it.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "run_glue.py", line 652, in <module>
+    main()
+  File "run_glue.py", line 384, in main
+    config = AutoConfig.from_pretrained(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/models/auto/configuration_auto.py", line 1103, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 634, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 689, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 416, in cached_file
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-2-7b.
+401 Client Error. (Request ID: Root=1-65cacdfd-46faaa8e763806a075c5022e;5a2b061d-702b-4c55-9a64-f83aa2977ab7)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b is gated. You must be authenticated to access it.
+[2024-02-12 21:03:42,970] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 92769) of binary: /jet/home/mmisra/miniconda3/envs/benchmark/bin/python
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 192, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 816, in <module>
+    main()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+run_glue.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-02-12_21:03:42
+  host      : v005.ib.bridges2.psc.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 92770)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-02-12_21:03:42
+  host      : v005.ib.bridges2.psc.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 92769)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: v005: task 0: Exited with exit code 1
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+02/12/2024 21:05:24 - WARNING - __main__ - Process rank: 0, device: cuda:0, n_gpu: 1, distributed training: True, 16-bits training: False
+02/12/2024 21:05:24 - INFO - __main__ - Training/evaluation parameters TrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+bf16=False,
+bf16_full_eval=False,
+data_seed=None,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+dispatch_batches=None,
+do_eval=True,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=no,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+fsdp=[],
+fsdp_config={'min_num_params': 0, 'xla': False, 'xla_fsdp_grad_ckpt': False},
+fsdp_min_num_params=0,
+fsdp_transformer_layer_cls_to_wrap=None,
+full_determinism=False,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+gradient_checkpointing_kwargs=None,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=False,
+hub_strategy=every_save,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+include_inputs_for_metrics=False,
+include_num_input_tokens_seen=False,
+include_tokens_per_second=False,
+jit_mode_eval=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=5e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=0,
+log_level=passive,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc7b/runs/Feb12_21-05-24_v005.ib.bridges2.psc.edu,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=steps,
+lr_scheduler_kwargs={},
+lr_scheduler_type=linear,
+max_grad_norm=1.0,
+max_steps=-1,
+metric_for_best_model=None,
+mp_parameters=,
+neftune_noise_alpha=None,
+no_cuda=False,
+num_train_epochs=3.0,
+optim=adamw_torch,
+optim_args=None,
+output_dir=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc7b,
+overwrite_output_dir=False,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=8,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+ray_scope=last,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc7b,
+save_on_each_node=False,
+save_only_model=False,
+save_safetensors=True,
+save_steps=500,
+save_strategy=steps,
+save_total_limit=None,
+seed=42,
+skip_memory_metrics=True,
+split_batches=False,
+tf32=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torchdynamo=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_cpu=False,
+use_ipex=False,
+use_legacy_prediction_loop=False,
+use_mps_device=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+)
+02/12/2024 21:05:24 - WARNING - __main__ - Process rank: 1, device: cuda:1, n_gpu: 1, distributed training: True, 16-bits training: False
+Overwrite dataset info from restored data version if exists.
+02/12/2024 21:05:25 - INFO - datasets.builder - Overwrite dataset info from restored data version if exists.
+Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+02/12/2024 21:05:25 - INFO - datasets.info - Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+Found cached dataset glue (/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c)
+02/12/2024 21:05:25 - INFO - datasets.builder - Found cached dataset glue (/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c)
+Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+02/12/2024 21:05:25 - INFO - datasets.info - Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 286, in hf_raise_for_status
+    response.raise_for_status()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/llama/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 398, in cached_file
+    resolved_file = hf_hub_download(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1368, in hf_hub_download
+    raise head_call_error
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1238, in hf_hub_download
+    metadata = get_hf_file_metadata(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1631, in get_hf_file_metadata
+    r = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 385, in _request_wrapper
+    response = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 409, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 323, in hf_raise_for_status
+    raise RepositoryNotFoundError(message, response) from e
+huggingface_hub.utils._errors.RepositoryNotFoundError: 401 Client Error. (Request ID: Root=1-65cace65-4cb7e1c3292b946040972663;8cd2669b-8abc-4da3-864d-9ecc50d22156)
+
+Repository Not Found for url: https://huggingface.co/llama/resolve/main/config.json.
+Please make sure you specified the correct `repo_id` and `repo_type`.
+If you are trying to access a private or gated repo, make sure you are authenticated.
+Invalid username or password.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "run_glue.py", line 652, in <module>
+    main()
+  File "run_glue.py", line 384, in main
+    config = AutoConfig.from_pretrained(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/models/auto/configuration_auto.py", line 1103, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 634, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 689, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 421, in cached_file
+    raise EnvironmentError(
+OSError: llama is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 286, in hf_raise_for_status
+    response.raise_for_status()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/llama/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 398, in cached_file
+    resolved_file = hf_hub_download(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1368, in hf_hub_download
+    raise head_call_error
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1238, in hf_hub_download
+    metadata = get_hf_file_metadata(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1631, in get_hf_file_metadata
+    r = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 385, in _request_wrapper
+    response = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 409, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 323, in hf_raise_for_status
+    raise RepositoryNotFoundError(message, response) from e
+huggingface_hub.utils._errors.RepositoryNotFoundError: 401 Client Error. (Request ID: Root=1-65cace66-6ff40c0a6ba3ea8a2f076683;126e981e-cb86-4ce4-b629-f2e71f5f249c)
+
+Repository Not Found for url: https://huggingface.co/llama/resolve/main/config.json.
+Please make sure you specified the correct `repo_id` and `repo_type`.
+If you are trying to access a private or gated repo, make sure you are authenticated.
+Invalid username or password.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "run_glue.py", line 652, in <module>
+    main()
+  File "run_glue.py", line 384, in main
+    config = AutoConfig.from_pretrained(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/models/auto/configuration_auto.py", line 1103, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 634, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 689, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 421, in cached_file
+    raise EnvironmentError(
+OSError: llama is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+[2024-02-12 21:05:27,760] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 92933) of binary: /jet/home/mmisra/miniconda3/envs/benchmark/bin/python
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 192, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 816, in <module>
+    main()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+run_glue.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-02-12_21:05:27
+  host      : v005.ib.bridges2.psc.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 92934)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-02-12_21:05:27
+  host      : v005.ib.bridges2.psc.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 92933)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: v005: task 0: Exited with exit code 1
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+02/12/2024 21:06:44 - WARNING - __main__ - Process rank: 0, device: cuda:0, n_gpu: 1, distributed training: True, 16-bits training: False
+02/12/2024 21:06:44 - INFO - __main__ - Training/evaluation parameters TrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+bf16=False,
+bf16_full_eval=False,
+data_seed=None,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+dispatch_batches=None,
+do_eval=True,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=no,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+fsdp=[],
+fsdp_config={'min_num_params': 0, 'xla': False, 'xla_fsdp_grad_ckpt': False},
+fsdp_min_num_params=0,
+fsdp_transformer_layer_cls_to_wrap=None,
+full_determinism=False,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+gradient_checkpointing_kwargs=None,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=False,
+hub_strategy=every_save,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+include_inputs_for_metrics=False,
+include_num_input_tokens_seen=False,
+include_tokens_per_second=False,
+jit_mode_eval=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=5e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=0,
+log_level=passive,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc7b/runs/Feb12_21-06-44_v005.ib.bridges2.psc.edu,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=steps,
+lr_scheduler_kwargs={},
+lr_scheduler_type=linear,
+max_grad_norm=1.0,
+max_steps=-1,
+metric_for_best_model=None,
+mp_parameters=,
+neftune_noise_alpha=None,
+no_cuda=False,
+num_train_epochs=3.0,
+optim=adamw_torch,
+optim_args=None,
+output_dir=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc7b,
+overwrite_output_dir=False,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=8,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+ray_scope=last,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc7b,
+save_on_each_node=False,
+save_only_model=False,
+save_safetensors=True,
+save_steps=500,
+save_strategy=steps,
+save_total_limit=None,
+seed=42,
+skip_memory_metrics=True,
+split_batches=False,
+tf32=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torchdynamo=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_cpu=False,
+use_ipex=False,
+use_legacy_prediction_loop=False,
+use_mps_device=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+)
+02/12/2024 21:06:45 - WARNING - __main__ - Process rank: 1, device: cuda:1, n_gpu: 1, distributed training: True, 16-bits training: False
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 286, in hf_raise_for_status
+    response.raise_for_status()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/meta-llama/Llama-2-7b-hf/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 398, in cached_file
+    resolved_file = hf_hub_download(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1368, in hf_hub_download
+    raise head_call_error
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1238, in hf_hub_download
+    metadata = get_hf_file_metadata(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1631, in get_hf_file_metadata
+    r = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 385, in _request_wrapper
+    response = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 409, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 302, in hf_raise_for_status
+    raise GatedRepoError(message, response) from e
+huggingface_hub.utils._errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-65caceb6-3387c7c222cb81a077e7b57e;4e2a8c25-06a7-49ab-be4c-73e831fac0ef)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b-hf/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b-hf is gated. You must be authenticated to access it.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "run_glue.py", line 652, in <module>
+    main()
+  File "run_glue.py", line 384, in main
+    config = AutoConfig.from_pretrained(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/models/auto/configuration_auto.py", line 1103, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 634, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 689, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 416, in cached_file
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-2-7b-hf.
+401 Client Error. (Request ID: Root=1-65caceb6-3387c7c222cb81a077e7b57e;4e2a8c25-06a7-49ab-be4c-73e831fac0ef)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b-hf/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b-hf is gated. You must be authenticated to access it.
+Overwrite dataset info from restored data version if exists.
+02/12/2024 21:06:46 - INFO - datasets.builder - Overwrite dataset info from restored data version if exists.
+Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+02/12/2024 21:06:46 - INFO - datasets.info - Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+Found cached dataset glue (/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c)
+02/12/2024 21:06:46 - INFO - datasets.builder - Found cached dataset glue (/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c)
+Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+02/12/2024 21:06:46 - INFO - datasets.info - Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 286, in hf_raise_for_status
+    response.raise_for_status()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/meta-llama/Llama-2-7b-hf/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 398, in cached_file
+    resolved_file = hf_hub_download(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1368, in hf_hub_download
+    raise head_call_error
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1238, in hf_hub_download
+    metadata = get_hf_file_metadata(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1631, in get_hf_file_metadata
+    r = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 385, in _request_wrapper
+    response = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 409, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 302, in hf_raise_for_status
+    raise GatedRepoError(message, response) from e
+huggingface_hub.utils._errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-65caceb6-650514505620519b2681bb7d;2e203e1e-d391-4d0a-8cf5-65f5ad46bc25)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b-hf/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b-hf is gated. You must be authenticated to access it.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "run_glue.py", line 652, in <module>
+    main()
+  File "run_glue.py", line 384, in main
+    config = AutoConfig.from_pretrained(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/models/auto/configuration_auto.py", line 1103, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 634, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 689, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 416, in cached_file
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-2-7b-hf.
+401 Client Error. (Request ID: Root=1-65caceb6-650514505620519b2681bb7d;2e203e1e-d391-4d0a-8cf5-65f5ad46bc25)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b-hf/resolve/main/config.json.
+Repo model meta-llama/Llama-2-7b-hf is gated. You must be authenticated to access it.
+[2024-02-12 21:06:47,986] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 93027) of binary: /jet/home/mmisra/miniconda3/envs/benchmark/bin/python
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 192, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 816, in <module>
+    main()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+run_glue.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-02-12_21:06:47
+  host      : v005.ib.bridges2.psc.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 93028)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-02-12_21:06:47
+  host      : v005.ib.bridges2.psc.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 93027)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: v005: task 0: Exited with exit code 1

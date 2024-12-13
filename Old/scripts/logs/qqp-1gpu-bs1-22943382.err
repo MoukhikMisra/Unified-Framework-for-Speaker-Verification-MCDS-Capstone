@@ -1,0 +1,97 @@
++ nvidia-smi
++ pwd
++ source /jet/home/mmisra/miniconda3/etc/profile.d/conda.sh
+++ export CONDA_EXE=/jet/home/mmisra/miniconda3/bin/conda
+++ CONDA_EXE=/jet/home/mmisra/miniconda3/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/jet/home/mmisra/miniconda3/bin/python
+++ CONDA_PYTHON_EXE=/jet/home/mmisra/miniconda3/bin/python
+++ '[' -z x ']'
++ conda activate /jet/home/mmisra/miniconda3/envs/benchmark
++ local cmd=activate
++ case "$cmd" in
++ __conda_activate activate /jet/home/mmisra/miniconda3/envs/benchmark
++ '[' -n '' ']'
++ local ask_conda
+++ PS1=
+++ __conda_exe shell.posix activate /jet/home/mmisra/miniconda3/envs/benchmark
+++ /jet/home/mmisra/miniconda3/bin/conda shell.posix activate /jet/home/mmisra/miniconda3/envs/benchmark
++ ask_conda='PS1='\''(benchmark) '\''
+export PATH='\''/jet/home/mmisra/miniconda3/envs/benchmark/bin:/ocean/projects/cis220031p/mmisra/miniconda3/condabin:/jet/home/mmisra/.local/bin:/jet/home/mmisra/bin:/opt/packages/psc.allocations.user/bin:/opt/packages/allocations/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/packages/interact/bin:/opt/puppetlabs/bin'\''
+export CONDA_PREFIX='\''/jet/home/mmisra/miniconda3/envs/benchmark'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''benchmark'\''
+export CONDA_PROMPT_MODIFIER='\''(benchmark) '\''
+export CONDA_PREFIX_1='\''/ocean/projects/cis220031p/mmisra/miniconda3'\''
+export CONDA_EXE='\''/jet/home/mmisra/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/jet/home/mmisra/miniconda3/bin/python'\'''
++ eval 'PS1='\''(benchmark) '\''
+export PATH='\''/jet/home/mmisra/miniconda3/envs/benchmark/bin:/ocean/projects/cis220031p/mmisra/miniconda3/condabin:/jet/home/mmisra/.local/bin:/jet/home/mmisra/bin:/opt/packages/psc.allocations.user/bin:/opt/packages/allocations/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/packages/interact/bin:/opt/puppetlabs/bin'\''
+export CONDA_PREFIX='\''/jet/home/mmisra/miniconda3/envs/benchmark'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''benchmark'\''
+export CONDA_PROMPT_MODIFIER='\''(benchmark) '\''
+export CONDA_PREFIX_1='\''/ocean/projects/cis220031p/mmisra/miniconda3'\''
+export CONDA_EXE='\''/jet/home/mmisra/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/jet/home/mmisra/miniconda3/bin/python'\'''
+++ PS1='(benchmark) '
+++ export PATH=/jet/home/mmisra/miniconda3/envs/benchmark/bin:/ocean/projects/cis220031p/mmisra/miniconda3/condabin:/jet/home/mmisra/.local/bin:/jet/home/mmisra/bin:/opt/packages/psc.allocations.user/bin:/opt/packages/allocations/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/packages/interact/bin:/opt/puppetlabs/bin
+++ PATH=/jet/home/mmisra/miniconda3/envs/benchmark/bin:/ocean/projects/cis220031p/mmisra/miniconda3/condabin:/jet/home/mmisra/.local/bin:/jet/home/mmisra/bin:/opt/packages/psc.allocations.user/bin:/opt/packages/allocations/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/packages/interact/bin:/opt/puppetlabs/bin
+++ export CONDA_PREFIX=/jet/home/mmisra/miniconda3/envs/benchmark
+++ CONDA_PREFIX=/jet/home/mmisra/miniconda3/envs/benchmark
+++ export CONDA_SHLVL=2
+++ CONDA_SHLVL=2
+++ export CONDA_DEFAULT_ENV=benchmark
+++ CONDA_DEFAULT_ENV=benchmark
+++ export 'CONDA_PROMPT_MODIFIER=(benchmark) '
+++ CONDA_PROMPT_MODIFIER='(benchmark) '
+++ export CONDA_PREFIX_1=/ocean/projects/cis220031p/mmisra/miniconda3
+++ CONDA_PREFIX_1=/ocean/projects/cis220031p/mmisra/miniconda3
+++ export CONDA_EXE=/jet/home/mmisra/miniconda3/bin/conda
+++ CONDA_EXE=/jet/home/mmisra/miniconda3/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/jet/home/mmisra/miniconda3/bin/python
+++ CONDA_PYTHON_EXE=/jet/home/mmisra/miniconda3/bin/python
++ __conda_hashr
++ '[' -n '' ']'
++ '[' -n '' ']'
++ hash -r
++ cd /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling
+++ date
++ echo 'START TIME: Thu Mar 14 08:23:50 EDT 2024'
++ LOG_PATH=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/logs/log22943382.txt
++ GPUS_PER_NODE=1
++ NNODES=1
+++ expr 1 '*' 1
++ NUM_PROCESSES=1
+++ head -n 1
+++ scontrol show hostnames v020
++ MASTER_ADDR=v020
++ MASTER_PORT=6000
++ echo 'MASTER_ADDR=v020 MASTER_PORT=6000 NUM_PROCESSES=1 GPUS_PER_NODE=1 NNODES=1 $SLURM_PROCID'
++ export HF_HOME=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache
++ HF_HOME=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache
++ export HF_DATASETS_CACHE=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache
++ HF_DATASETS_CACHE=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache
++ export TRANSFORMERS_CACHE=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache
++ TRANSFORMERS_CACHE=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache
++ export 'LAUNCHER=python -m torch.distributed.run  --nproc_per_node 1 --nnodes 1 --node_rank $SLURM_PROCID  --master_addr v020 --master_port 6000 '
++ LAUNCHER='python -m torch.distributed.run  --nproc_per_node 1 --nnodes 1 --node_rank $SLURM_PROCID  --master_addr v020 --master_port 6000 '
++ export 'PROGRAM=    run_glue_no_trainer.py         --model_name_or_path datajuicer/LLaMA-1B-dj-refine-100B         --task_name qqp         --per_device_train_batch_size 6         --per_device_eval_batch_size 6         --output_dir /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/qqp     '
++ PROGRAM='    run_glue_no_trainer.py         --model_name_or_path datajuicer/LLaMA-1B-dj-refine-100B         --task_name qqp         --per_device_train_batch_size 6         --per_device_eval_batch_size 6         --output_dir /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/qqp     '
++ export 'CMD=python -m torch.distributed.run  --nproc_per_node 1 --nnodes 1 --node_rank $SLURM_PROCID  --master_addr v020 --master_port 6000      run_glue_no_trainer.py         --model_name_or_path datajuicer/LLaMA-1B-dj-refine-100B         --task_name qqp         --per_device_train_batch_size 6         --per_device_eval_batch_size 6         --output_dir /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/qqp     '
++ CMD='python -m torch.distributed.run  --nproc_per_node 1 --nnodes 1 --node_rank $SLURM_PROCID  --master_addr v020 --master_port 6000      run_glue_no_trainer.py         --model_name_or_path datajuicer/LLaMA-1B-dj-refine-100B         --task_name qqp         --per_device_train_batch_size 6         --per_device_eval_batch_size 6         --output_dir /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/qqp     '
++ tee -a /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/logs/log22943382.txt
++ srun --jobid 22943382 bash -c 'python -m torch.distributed.run  --nproc_per_node 1 --nnodes 1 --node_rank $SLURM_PROCID  --master_addr v020 --master_port 6000      run_glue_no_trainer.py         --model_name_or_path datajuicer/LLaMA-1B-dj-refine-100B         --task_name qqp         --per_device_train_batch_size 6         --per_device_eval_batch_size 6         --output_dir /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/qqp     '
+++ date
++ echo 'END TIME: Thu Mar 14 08:49:22 EDT 2024'

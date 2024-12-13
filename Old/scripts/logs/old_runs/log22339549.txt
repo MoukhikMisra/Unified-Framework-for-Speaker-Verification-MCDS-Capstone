@@ -1,0 +1,670 @@
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+02/16/2024 15:18:09 - WARNING - __main__ - Process rank: 0, device: cuda:0, n_gpu: 1, distributed training: True, 16-bits training: False
+02/16/2024 15:18:09 - INFO - __main__ - Training/evaluation parameters TrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+bf16=False,
+bf16_full_eval=False,
+data_seed=None,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+dispatch_batches=None,
+do_eval=True,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=no,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+fsdp=[],
+fsdp_config={'min_num_params': 0, 'xla': False, 'xla_fsdp_grad_ckpt': False},
+fsdp_min_num_params=0,
+fsdp_transformer_layer_cls_to_wrap=None,
+full_determinism=False,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+gradient_checkpointing_kwargs=None,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=False,
+hub_strategy=every_save,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+include_inputs_for_metrics=False,
+include_num_input_tokens_seen=False,
+include_tokens_per_second=False,
+jit_mode_eval=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=5e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=0,
+log_level=passive,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc256GPU1/runs/Feb16_15-18-09_v007.ib.bridges2.psc.edu,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=steps,
+lr_scheduler_kwargs={},
+lr_scheduler_type=linear,
+max_grad_norm=1.0,
+max_steps=-1,
+metric_for_best_model=None,
+mp_parameters=,
+neftune_noise_alpha=None,
+no_cuda=False,
+num_train_epochs=3.0,
+optim=adamw_torch,
+optim_args=None,
+output_dir=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc256GPU1,
+overwrite_output_dir=False,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=8,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+ray_scope=last,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc256GPU1,
+save_on_each_node=False,
+save_only_model=False,
+save_safetensors=True,
+save_steps=500,
+save_strategy=steps,
+save_total_limit=None,
+seed=42,
+skip_memory_metrics=True,
+split_batches=False,
+tf32=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torchdynamo=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_cpu=False,
+use_ipex=False,
+use_legacy_prediction_loop=False,
+use_mps_device=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+)
+Traceback (most recent call last):
+  File "run_glue.py", line 656, in <module>
+    main()
+  File "run_glue.py", line 236, in main
+    model_args, data_args, training_args = parser.parse_args_into_dataclasses()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/hf_argparser.py", line 338, in parse_args_into_dataclasses
+    obj = dtype(**inputs)
+  File "<string>", line 121, in __init__
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/training_args.py", line 1495, in __post_init__
+    and (self.device.type != "cuda")
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/training_args.py", line 1939, in device
+    return self._setup_devices
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/generic.py", line 56, in __get__
+    cached = self.fget(obj)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/training_args.py", line 1875, in _setup_devices
+    self.distributed_state = PartialState(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/accelerate/state.py", line 236, in __init__
+    torch.cuda.set_device(self.device)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/cuda/__init__.py", line 408, in set_device
+    torch._C._cuda_setDevice(device)
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+Overwrite dataset info from restored data version if exists.
+02/16/2024 15:18:11 - INFO - datasets.builder - Overwrite dataset info from restored data version if exists.
+Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+02/16/2024 15:18:11 - INFO - datasets.info - Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+[2024-02-16 15:18:11,685] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 23819 closing signal SIGTERM
+[2024-02-16 15:18:11,799] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 1 (pid: 23820) of binary: /jet/home/mmisra/miniconda3/envs/benchmark/bin/python
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 192, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 816, in <module>
+    main()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+run_glue.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-02-16_15:18:11
+  host      : v007.ib.bridges2.psc.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 23820)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: v007: task 0: Exited with exit code 1
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Traceback (most recent call last):
+  File "run_glue.py", line 656, in <module>
+    main()
+  File "run_glue.py", line 236, in main
+    model_args, data_args, training_args = parser.parse_args_into_dataclasses()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/hf_argparser.py", line 338, in parse_args_into_dataclasses
+02/16/2024 15:19:43 - WARNING - __main__ - Process rank: 0, device: cuda:0, n_gpu: 1, distributed training: True, 16-bits training: False
+02/16/2024 15:19:43 - INFO - __main__ - Training/evaluation parameters TrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+bf16=False,
+bf16_full_eval=False,
+data_seed=None,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+dispatch_batches=None,
+do_eval=True,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=no,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+fsdp=[],
+fsdp_config={'min_num_params': 0, 'xla': False, 'xla_fsdp_grad_ckpt': False},
+fsdp_min_num_params=0,
+fsdp_transformer_layer_cls_to_wrap=None,
+full_determinism=False,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+gradient_checkpointing_kwargs=None,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=False,
+hub_strategy=every_save,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+include_inputs_for_metrics=False,
+include_num_input_tokens_seen=False,
+include_tokens_per_second=False,
+jit_mode_eval=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=5e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=0,
+log_level=passive,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc256GPU1/runs/Feb16_15-19-43_v007.ib.bridges2.psc.edu,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=steps,
+lr_scheduler_kwargs={},
+lr_scheduler_type=linear,
+max_grad_norm=1.0,
+max_steps=-1,
+metric_for_best_model=None,
+mp_parameters=,
+neftune_noise_alpha=None,
+no_cuda=False,
+num_train_epochs=3.0,
+optim=adamw_torch,
+optim_args=None,
+output_dir=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc256GPU1,
+overwrite_output_dir=False,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=8,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+ray_scope=last,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc256GPU1,
+save_on_each_node=False,
+save_only_model=False,
+save_safetensors=True,
+save_steps=500,
+save_strategy=steps,
+save_total_limit=None,
+seed=42,
+skip_memory_metrics=True,
+split_batches=False,
+tf32=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torchdynamo=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_cpu=False,
+use_ipex=False,
+use_legacy_prediction_loop=False,
+use_mps_device=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+)
+    obj = dtype(**inputs)
+  File "<string>", line 121, in __init__
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/training_args.py", line 1495, in __post_init__
+    and (self.device.type != "cuda")
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/training_args.py", line 1939, in device
+    return self._setup_devices
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/generic.py", line 56, in __get__
+    cached = self.fget(obj)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/training_args.py", line 1875, in _setup_devices
+    self.distributed_state = PartialState(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/accelerate/state.py", line 236, in __init__
+    torch.cuda.set_device(self.device)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/cuda/__init__.py", line 408, in set_device
+    torch._C._cuda_setDevice(device)
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+Overwrite dataset info from restored data version if exists.
+02/16/2024 15:19:44 - INFO - datasets.builder - Overwrite dataset info from restored data version if exists.
+Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+02/16/2024 15:19:44 - INFO - datasets.info - Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+Found cached dataset glue (/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c)
+02/16/2024 15:19:44 - INFO - datasets.builder - Found cached dataset glue (/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c)
+Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+02/16/2024 15:19:44 - INFO - datasets.info - Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+[INFO|configuration_utils.py:729] 2024-02-16 15:19:44,684 >> loading configuration file config.json from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--datajuicer--LLaMA-1B-dj-refine-100B/snapshots/1bd6974aad6057a3e17b69fa4f818c07aedeae51/config.json
+[INFO|configuration_utils.py:792] 2024-02-16 15:19:44,687 >> Model config LlamaConfig {
+  "_name_or_path": "datajuicer/LLaMA-1B-dj-refine-100B",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "finetuning_task": "mrpc",
+  "hidden_act": "silu",
+  "hidden_size": 2048,
+  "initializer_range": 0.02,
+  "intermediate_size": 5504,
+  "max_position_embeddings": 2048,
+  "max_sequence_length": 2048,
+  "model_type": "llama",
+  "num_attention_heads": 16,
+  "num_hidden_layers": 24,
+  "num_key_value_heads": 16,
+  "pad_token_id": 32004,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 10000.0,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.38.0.dev0",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+[INFO|tokenization_utils_base.py:2029] 2024-02-16 15:19:44,742 >> loading file tokenizer.model from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--datajuicer--LLaMA-1B-dj-refine-100B/snapshots/1bd6974aad6057a3e17b69fa4f818c07aedeae51/tokenizer.model
+[INFO|tokenization_utils_base.py:2029] 2024-02-16 15:19:44,743 >> loading file tokenizer.json from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--datajuicer--LLaMA-1B-dj-refine-100B/snapshots/1bd6974aad6057a3e17b69fa4f818c07aedeae51/tokenizer.json
+[INFO|tokenization_utils_base.py:2029] 2024-02-16 15:19:44,743 >> loading file added_tokens.json from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--datajuicer--LLaMA-1B-dj-refine-100B/snapshots/1bd6974aad6057a3e17b69fa4f818c07aedeae51/added_tokens.json
+[INFO|tokenization_utils_base.py:2029] 2024-02-16 15:19:44,743 >> loading file special_tokens_map.json from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--datajuicer--LLaMA-1B-dj-refine-100B/snapshots/1bd6974aad6057a3e17b69fa4f818c07aedeae51/special_tokens_map.json
+[INFO|tokenization_utils_base.py:2029] 2024-02-16 15:19:44,743 >> loading file tokenizer_config.json from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--datajuicer--LLaMA-1B-dj-refine-100B/snapshots/1bd6974aad6057a3e17b69fa4f818c07aedeae51/tokenizer_config.json
+[WARNING|logging.py:314] 2024-02-16 15:19:44,867 >> Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[INFO|modeling_utils.py:3259] 2024-02-16 15:19:45,455 >> loading weights file pytorch_model.bin from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--datajuicer--LLaMA-1B-dj-refine-100B/snapshots/1bd6974aad6057a3e17b69fa4f818c07aedeae51/pytorch_model.bin
+[2024-02-16 15:19:48,120] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 24093 closing signal SIGTERM
+[2024-02-16 15:19:48,235] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 1 (pid: 24094) of binary: /jet/home/mmisra/miniconda3/envs/benchmark/bin/python
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 192, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 816, in <module>
+    main()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+run_glue.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-02-16_15:19:48
+  host      : v007.ib.bridges2.psc.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 24094)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: v007: task 0: Exited with exit code 1
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Traceback (most recent call last):
+  File "run_glue.py", line 656, in <module>
+    main()
+  File "run_glue.py", line 236, in main
+    model_args, data_args, training_args = parser.parse_args_into_dataclasses()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/hf_argparser.py", line 338, in parse_args_into_dataclasses
+02/16/2024 15:20:16 - WARNING - __main__ - Process rank: 0, device: cuda:0, n_gpu: 1, distributed training: True, 16-bits training: False
+02/16/2024 15:20:16 - INFO - __main__ - Training/evaluation parameters TrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+bf16=False,
+bf16_full_eval=False,
+data_seed=None,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+dispatch_batches=None,
+do_eval=True,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=no,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+fsdp=[],
+fsdp_config={'min_num_params': 0, 'xla': False, 'xla_fsdp_grad_ckpt': False},
+fsdp_min_num_params=0,
+fsdp_transformer_layer_cls_to_wrap=None,
+full_determinism=False,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+gradient_checkpointing_kwargs=None,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=False,
+hub_strategy=every_save,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+include_inputs_for_metrics=False,
+include_num_input_tokens_seen=False,
+include_tokens_per_second=False,
+jit_mode_eval=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=5e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=0,
+log_level=passive,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc64GPU1/runs/Feb16_15-20-16_v007.ib.bridges2.psc.edu,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=steps,
+lr_scheduler_kwargs={},
+lr_scheduler_type=linear,
+max_grad_norm=1.0,
+max_steps=-1,
+metric_for_best_model=None,
+mp_parameters=,
+neftune_noise_alpha=None,
+no_cuda=False,
+num_train_epochs=3.0,
+optim=adamw_torch,
+optim_args=None,
+output_dir=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc64GPU1,
+overwrite_output_dir=False,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=8,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+ray_scope=last,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/mrpc64GPU1,
+save_on_each_node=False,
+save_only_model=False,
+save_safetensors=True,
+save_steps=500,
+save_strategy=steps,
+save_total_limit=None,
+seed=42,
+skip_memory_metrics=True,
+split_batches=False,
+tf32=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torchdynamo=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_cpu=False,
+use_ipex=False,
+use_legacy_prediction_loop=False,
+use_mps_device=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+)
+    obj = dtype(**inputs)
+  File "<string>", line 121, in __init__
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/training_args.py", line 1495, in __post_init__
+    and (self.device.type != "cuda")
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/training_args.py", line 1939, in device
+    return self._setup_devices
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/generic.py", line 56, in __get__
+    cached = self.fget(obj)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/training_args.py", line 1875, in _setup_devices
+    self.distributed_state = PartialState(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/accelerate/state.py", line 236, in __init__
+    torch.cuda.set_device(self.device)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/cuda/__init__.py", line 408, in set_device
+    torch._C._cuda_setDevice(device)
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+Overwrite dataset info from restored data version if exists.
+02/16/2024 15:20:17 - INFO - datasets.builder - Overwrite dataset info from restored data version if exists.
+Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+02/16/2024 15:20:17 - INFO - datasets.info - Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+Found cached dataset glue (/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c)
+02/16/2024 15:20:17 - INFO - datasets.builder - Found cached dataset glue (/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c)
+Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+02/16/2024 15:20:17 - INFO - datasets.info - Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+[INFO|configuration_utils.py:729] 2024-02-16 15:20:17,810 >> loading configuration file config.json from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--datajuicer--LLaMA-1B-dj-refine-100B/snapshots/1bd6974aad6057a3e17b69fa4f818c07aedeae51/config.json
+[INFO|configuration_utils.py:792] 2024-02-16 15:20:17,812 >> Model config LlamaConfig {
+  "_name_or_path": "datajuicer/LLaMA-1B-dj-refine-100B",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "finetuning_task": "mrpc",
+  "hidden_act": "silu",
+  "hidden_size": 2048,
+  "initializer_range": 0.02,
+  "intermediate_size": 5504,
+  "max_position_embeddings": 2048,
+  "max_sequence_length": 2048,
+  "model_type": "llama",
+  "num_attention_heads": 16,
+  "num_hidden_layers": 24,
+  "num_key_value_heads": 16,
+  "pad_token_id": 32004,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 10000.0,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.38.0.dev0",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+[INFO|tokenization_utils_base.py:2029] 2024-02-16 15:20:17,844 >> loading file tokenizer.model from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--datajuicer--LLaMA-1B-dj-refine-100B/snapshots/1bd6974aad6057a3e17b69fa4f818c07aedeae51/tokenizer.model
+[INFO|tokenization_utils_base.py:2029] 2024-02-16 15:20:17,844 >> loading file tokenizer.json from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--datajuicer--LLaMA-1B-dj-refine-100B/snapshots/1bd6974aad6057a3e17b69fa4f818c07aedeae51/tokenizer.json
+[INFO|tokenization_utils_base.py:2029] 2024-02-16 15:20:17,845 >> loading file added_tokens.json from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--datajuicer--LLaMA-1B-dj-refine-100B/snapshots/1bd6974aad6057a3e17b69fa4f818c07aedeae51/added_tokens.json
+[INFO|tokenization_utils_base.py:2029] 2024-02-16 15:20:17,845 >> loading file special_tokens_map.json from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--datajuicer--LLaMA-1B-dj-refine-100B/snapshots/1bd6974aad6057a3e17b69fa4f818c07aedeae51/special_tokens_map.json
+[INFO|tokenization_utils_base.py:2029] 2024-02-16 15:20:17,845 >> loading file tokenizer_config.json from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--datajuicer--LLaMA-1B-dj-refine-100B/snapshots/1bd6974aad6057a3e17b69fa4f818c07aedeae51/tokenizer_config.json
+[WARNING|logging.py:314] 2024-02-16 15:20:17,902 >> Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[INFO|modeling_utils.py:3259] 2024-02-16 15:20:17,960 >> loading weights file pytorch_model.bin from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--datajuicer--LLaMA-1B-dj-refine-100B/snapshots/1bd6974aad6057a3e17b69fa4f818c07aedeae51/pytorch_model.bin
+[2024-02-16 15:20:18,416] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 24164 closing signal SIGTERM
+[2024-02-16 15:20:18,530] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 1 (pid: 24165) of binary: /jet/home/mmisra/miniconda3/envs/benchmark/bin/python
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 192, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 816, in <module>
+    main()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+run_glue.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-02-16_15:20:18
+  host      : v007.ib.bridges2.psc.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 24165)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: v007: task 0: Exited with exit code 1

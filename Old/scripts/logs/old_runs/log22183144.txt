@@ -1,0 +1,1746 @@
+/usr/bin/python2: No module named torch.distributed
+srun: error: v003: task 0: Exited with exit code 1
+/usr/bin/python2: No module named torch.distributed
+srun: error: v003: task 0: Exited with exit code 1
+/usr/bin/python2: No module named torch.distributed
+srun: error: v003: task 0: Exited with exit code 1
+/usr/bin/python2: No module named torch.distributed
+srun: error: v003: task 0: Exited with exit code 1
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+Traceback (most recent call last):
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/requests/compat.py", line 11, in <module>
+Traceback (most recent call last):
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/requests/compat.py", line 11, in <module>
+    import chardet
+ModuleNotFoundError: No module named 'chardet'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "run_glue.py", line 27, in <module>
+    import datasets
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/datasets/__init__.py", line 43, in <module>
+    import chardet
+ModuleNotFoundError: No module named 'chardet'
+
+During handling of the above exception, another exception occurred:
+
+    from .arrow_dataset import Dataset
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 60, in <module>
+Traceback (most recent call last):
+  File "run_glue.py", line 27, in <module>
+    import datasets
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/datasets/__init__.py", line 43, in <module>
+    from huggingface_hub import HfApi, HfFolder
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/__init__.py", line 332, in __getattr__
+    from .arrow_dataset import Dataset
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 60, in <module>
+    from huggingface_hub import HfApi, HfFolder
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/__init__.py", line 332, in __getattr__
+    submod = importlib.import_module(submod_path)
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    submod = importlib.import_module(submod_path)
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/hf_api.py", line 47, in <module>
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/hf_api.py", line 47, in <module>
+    import requests
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/requests/__init__.py", line 45, in <module>
+    import requests
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/requests/__init__.py", line 45, in <module>
+    from .exceptions import RequestsDependencyWarning
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/requests/exceptions.py", line 9, in <module>
+    from .exceptions import RequestsDependencyWarning
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/requests/exceptions.py", line 9, in <module>
+    from .compat import JSONDecodeError as CompatJSONDecodeError
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/requests/compat.py", line 13, in <module>
+    import charset_normalizer as chardet
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/charset_normalizer/__init__.py", line 23, in <module>
+    from .compat import JSONDecodeError as CompatJSONDecodeError
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/requests/compat.py", line 13, in <module>
+    import charset_normalizer as chardet
+    from charset_normalizer.api import from_fp, from_path, from_bytes, normalize
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/charset_normalizer/api.py", line 10, in <module>
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/charset_normalizer/__init__.py", line 23, in <module>
+    from charset_normalizer.api import from_fp, from_path, from_bytes, normalize
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/charset_normalizer/api.py", line 10, in <module>
+    from charset_normalizer.md import mess_ratio
+  File "charset_normalizer/md.py", line 5, in <module>
+    from charset_normalizer.md import mess_ratio
+  File "charset_normalizer/md.py", line 5, in <module>
+ImportError: cannot import name 'COMMON_SAFE_ASCII_CHARACTERS' from 'charset_normalizer.constant' (/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/charset_normalizer/constant.py)
+ImportError: cannot import name 'COMMON_SAFE_ASCII_CHARACTERS' from 'charset_normalizer.constant' (/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/charset_normalizer/constant.py)
+[2024-02-12 17:35:26,772] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 23062) of binary: /jet/home/mmisra/.conda/envs/benchmark/bin/python
+Traceback (most recent call last):
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/runpy.py", line 192, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 816, in <module>
+    main()
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+run_glue.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-02-12_17:35:26
+  host      : v003.ib.bridges2.psc.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 23063)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-02-12_17:35:26
+  host      : v003.ib.bridges2.psc.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 23062)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: v003: task 0: Exited with exit code 1
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+Traceback (most recent call last):
+  File "run_glue.py", line 27, in <module>
+    import datasets
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/datasets/__init__.py", line 43, in <module>
+    from .arrow_dataset import Dataset
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 65, in <module>
+    from .arrow_reader import ArrowReader
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/datasets/arrow_reader.py", line 28, in <module>
+Traceback (most recent call last):
+  File "run_glue.py", line 27, in <module>
+    import datasets
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/datasets/__init__.py", line 43, in <module>
+    from .arrow_dataset import Dataset
+    import pyarrow.parquet as pq
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pyarrow/parquet/__init__.py", line 20, in <module>
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 65, in <module>
+    from .arrow_reader import ArrowReader
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/datasets/arrow_reader.py", line 28, in <module>
+    from .core import *
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pyarrow/parquet/core.py", line 45, in <module>
+    import pyarrow.parquet as pq
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pyarrow/parquet/__init__.py", line 20, in <module>
+    from .core import *
+    from pyarrow.fs import (LocalFileSystem, FileSystem, FileType,
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pyarrow/fs.py", line 49, in <module>
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pyarrow/parquet/core.py", line 45, in <module>
+    from pyarrow.fs import (LocalFileSystem, FileSystem, FileType,
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pyarrow/fs.py", line 49, in <module>
+    from pyarrow._gcsfs import GcsFileSystem  # noqa
+  File "pyarrow/_gcsfs.pyx", line 1, in init pyarrow._gcsfs
+    from pyarrow._gcsfs import GcsFileSystem  # noqa
+  File "pyarrow/_gcsfs.pyx", line 1, in init pyarrow._gcsfs
+ValueError: pyarrow.lib.IpcWriteOptions size changed, may indicate binary incompatibility. Expected 88 from C header, got 72 from PyObject
+ValueError: pyarrow.lib.IpcWriteOptions size changed, may indicate binary incompatibility. Expected 88 from C header, got 72 from PyObject
+[2024-02-12 17:36:16,325] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 23175) of binary: /jet/home/mmisra/.conda/envs/benchmark/bin/python
+Traceback (most recent call last):
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/runpy.py", line 192, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 816, in <module>
+    main()
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+run_glue.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-02-12_17:36:16
+  host      : v003.ib.bridges2.psc.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 23176)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-02-12_17:36:16
+  host      : v003.ib.bridges2.psc.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 23175)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: v003: task 0: Exited with exit code 1
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "run_glue.py", line 27, in <module>
+    import datasets
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/datasets/__init__.py", line 43, in <module>
+    from .arrow_dataset import Dataset
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 65, in <module>
+    from .arrow_reader import ArrowReader
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/datasets/arrow_reader.py", line 28, in <module>
+    import pyarrow.parquet as pq
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pyarrow/parquet/__init__.py", line 20, in <module>
+    from .core import *
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pyarrow/parquet/core.py", line 45, in <module>
+    from pyarrow.fs import (LocalFileSystem, FileSystem, FileType,
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pyarrow/fs.py", line 49, in <module>
+    from pyarrow._gcsfs import GcsFileSystem  # noqa
+  File "pyarrow/_gcsfs.pyx", line 1, in init pyarrow._gcsfs
+ValueError: pyarrow.lib.IpcWriteOptions size changed, may indicate binary incompatibility. Expected 88 from C header, got 72 from PyObject
+  File "run_glue.py", line 27, in <module>
+    import datasets
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/datasets/__init__.py", line 43, in <module>
+    from .arrow_dataset import Dataset
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 65, in <module>
+    from .arrow_reader import ArrowReader
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/datasets/arrow_reader.py", line 28, in <module>
+    import pyarrow.parquet as pq
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pyarrow/parquet/__init__.py", line 20, in <module>
+    from .core import *
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pyarrow/parquet/core.py", line 45, in <module>
+    from pyarrow.fs import (LocalFileSystem, FileSystem, FileType,
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pyarrow/fs.py", line 49, in <module>
+    from pyarrow._gcsfs import GcsFileSystem  # noqa
+  File "pyarrow/_gcsfs.pyx", line 1, in init pyarrow._gcsfs
+ValueError: pyarrow.lib.IpcWriteOptions size changed, may indicate binary incompatibility. Expected 88 from C header, got 72 from PyObject
+[2024-02-12 17:38:35,844] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 23224) of binary: /jet/home/mmisra/.conda/envs/benchmark/bin/python
+Traceback (most recent call last):
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/runpy.py", line 192, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 816, in <module>
+    main()
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+run_glue.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-02-12_17:38:35
+  host      : v003.ib.bridges2.psc.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 23225)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-02-12_17:38:35
+  host      : v003.ib.bridges2.psc.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 23224)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: v003: task 0: Exited with exit code 1
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "run_glue.py", line 27, in <module>
+    import datasets
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/datasets/__init__.py", line 43, in <module>
+    from .arrow_dataset import Dataset
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 65, in <module>
+    from .arrow_reader import ArrowReader
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/datasets/arrow_reader.py", line 28, in <module>
+    import pyarrow.parquet as pq
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pyarrow/parquet/__init__.py", line 20, in <module>
+    from .core import *
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pyarrow/parquet/core.py", line 45, in <module>
+    from pyarrow.fs import (LocalFileSystem, FileSystem, FileType,
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pyarrow/fs.py", line 49, in <module>
+    from pyarrow._gcsfs import GcsFileSystem  # noqa
+  File "pyarrow/_gcsfs.pyx", line 1, in init pyarrow._gcsfs
+ValueError: pyarrow.lib.IpcWriteOptions size changed, may indicate binary incompatibility. Expected 88 from C header, got 72 from PyObject
+  File "run_glue.py", line 27, in <module>
+    import datasets
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/datasets/__init__.py", line 43, in <module>
+    from .arrow_dataset import Dataset
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 65, in <module>
+    from .arrow_reader import ArrowReader
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/datasets/arrow_reader.py", line 28, in <module>
+    import pyarrow.parquet as pq
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pyarrow/parquet/__init__.py", line 20, in <module>
+    from .core import *
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pyarrow/parquet/core.py", line 45, in <module>
+    from pyarrow.fs import (LocalFileSystem, FileSystem, FileType,
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pyarrow/fs.py", line 49, in <module>
+    from pyarrow._gcsfs import GcsFileSystem  # noqa
+  File "pyarrow/_gcsfs.pyx", line 1, in init pyarrow._gcsfs
+ValueError: pyarrow.lib.IpcWriteOptions size changed, may indicate binary incompatibility. Expected 88 from C header, got 72 from PyObject
+[2024-02-12 17:40:37,865] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 23344) of binary: /jet/home/mmisra/.conda/envs/benchmark/bin/python
+Traceback (most recent call last):
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/runpy.py", line 192, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 816, in <module>
+    main()
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+run_glue.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-02-12_17:40:37
+  host      : v003.ib.bridges2.psc.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 23345)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-02-12_17:40:37
+  host      : v003.ib.bridges2.psc.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 23344)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: v003: task 0: Exited with exit code 1
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "run_glue.py", line 27, in <module>
+    import datasets
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/datasets/__init__.py", line 18, in <module>
+  File "run_glue.py", line 27, in <module>
+        from .arrow_dataset import Dataset
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 59, in <module>
+import datasets
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/datasets/__init__.py", line 18, in <module>
+    import pandas as pd
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/__init__.py", line 48, in <module>
+    from .arrow_dataset import Dataset
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 59, in <module>
+    import pandas as pd
+    from pandas.core.api import (
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/api.py", line 47, in <module>
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/__init__.py", line 48, in <module>
+    from pandas.core.api import (
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/api.py", line 47, in <module>
+    from pandas.core.groupby import (
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/groupby/__init__.py", line 1, in <module>
+    from pandas.core.groupby import (
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/groupby/__init__.py", line 1, in <module>
+    from pandas.core.groupby.generic import (
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/groupby/generic.py", line 77, in <module>
+    from pandas.core.groupby.generic import (
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/groupby/generic.py", line 77, in <module>
+    from pandas.core.frame import DataFrame
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/frame.py", line 182, in <module>
+    from pandas.core.frame import DataFrame
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/frame.py", line 182, in <module>
+    from pandas.core.generic import NDFrame
+    from pandas.core.generic import NDFrame
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/generic.py", line 179, in <module>
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/generic.py", line 179, in <module>
+    from pandas.core.window import (
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/window/__init__.py", line 1, in <module>
+    from pandas.core.window import (
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/window/__init__.py", line 1, in <module>
+    from pandas.core.window.ewm import (
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/window/ewm.py", line 11, in <module>
+    from pandas.core.window.ewm import (
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/window/ewm.py", line 11, in <module>
+    import pandas._libs.window.aggregations as window_aggregations
+ImportError: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by /jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/_libs/window/aggregations.cpython-38-x86_64-linux-gnu.so)
+    import pandas._libs.window.aggregations as window_aggregations
+ImportError: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by /jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/_libs/window/aggregations.cpython-38-x86_64-linux-gnu.so)
+[2024-02-12 17:47:56,501] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 26142) of binary: /jet/home/mmisra/.conda/envs/benchmark/bin/python
+Traceback (most recent call last):
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/runpy.py", line 192, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 816, in <module>
+    main()
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+run_glue.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-02-12_17:47:56
+  host      : v003.ib.bridges2.psc.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 26143)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-02-12_17:47:56
+  host      : v003.ib.bridges2.psc.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 26142)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: v003: task 0: Exited with exit code 1
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+Traceback (most recent call last):
+  File "run_glue.py", line 27, in <module>
+    import datasets
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/datasets/__init__.py", line 18, in <module>
+    from .arrow_dataset import Dataset
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 59, in <module>
+    import pandas as pd
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/__init__.py", line 48, in <module>
+    from pandas.core.api import (
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/api.py", line 47, in <module>
+    from pandas.core.groupby import (
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/groupby/__init__.py", line 1, in <module>
+Traceback (most recent call last):
+  File "run_glue.py", line 27, in <module>
+    from pandas.core.groupby.generic import (
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/groupby/generic.py", line 77, in <module>
+    import datasets
+    from pandas.core.frame import DataFrame
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/frame.py", line 182, in <module>
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/datasets/__init__.py", line 18, in <module>
+        from pandas.core.generic import NDFrame
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/generic.py", line 179, in <module>
+from .arrow_dataset import Dataset
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 59, in <module>
+    from pandas.core.window import (
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/window/__init__.py", line 1, in <module>
+    import pandas as pd
+    from pandas.core.window.ewm import (
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/window/ewm.py", line 11, in <module>
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/__init__.py", line 48, in <module>
+        import pandas._libs.window.aggregations as window_aggregations
+ImportError: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by /jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/_libs/window/aggregations.cpython-38-x86_64-linux-gnu.so)
+from pandas.core.api import (
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/api.py", line 47, in <module>
+    from pandas.core.groupby import (
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/groupby/__init__.py", line 1, in <module>
+    from pandas.core.groupby.generic import (
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/groupby/generic.py", line 77, in <module>
+    from pandas.core.frame import DataFrame
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/frame.py", line 182, in <module>
+    from pandas.core.generic import NDFrame
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/generic.py", line 179, in <module>
+    from pandas.core.window import (
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/window/__init__.py", line 1, in <module>
+    from pandas.core.window.ewm import (
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/window/ewm.py", line 11, in <module>
+    import pandas._libs.window.aggregations as window_aggregations
+ImportError: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by /jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/_libs/window/aggregations.cpython-38-x86_64-linux-gnu.so)
+[2024-02-12 17:51:30,783] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 26298) of binary: /jet/home/mmisra/.conda/envs/benchmark/bin/python
+Traceback (most recent call last):
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/runpy.py", line 192, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 816, in <module>
+    main()
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+run_glue.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-02-12_17:51:30
+  host      : v003.ib.bridges2.psc.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 26299)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-02-12_17:51:30
+  host      : v003.ib.bridges2.psc.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 26298)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: v003: task 0: Exited with exit code 1
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+Traceback (most recent call last):
+  File "run_glue.py", line 27, in <module>
+    import datasets
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/datasets/__init__.py", line 18, in <module>
+    from .arrow_dataset import Dataset
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 59, in <module>
+    import pandas as pd
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/__init__.py", line 48, in <module>
+    from pandas.core.api import (
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/api.py", line 47, in <module>
+    from pandas.core.groupby import (
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/groupby/__init__.py", line 1, in <module>
+    from pandas.core.groupby.generic import (
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/groupby/generic.py", line 77, in <module>
+    from pandas.core.frame import DataFrame
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/frame.py", line 182, in <module>
+    from pandas.core.generic import NDFrame
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/generic.py", line 179, in <module>
+    from pandas.core.window import (
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/window/__init__.py", line 1, in <module>
+    from pandas.core.window.ewm import (
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/window/ewm.py", line 11, in <module>
+    import pandas._libs.window.aggregations as window_aggregations
+ImportError: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by /jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/_libs/window/aggregations.cpython-38-x86_64-linux-gnu.so)
+Traceback (most recent call last):
+  File "run_glue.py", line 27, in <module>
+    import datasets
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/datasets/__init__.py", line 18, in <module>
+    from .arrow_dataset import Dataset
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 59, in <module>
+    import pandas as pd
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/__init__.py", line 48, in <module>
+    from pandas.core.api import (
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/api.py", line 47, in <module>
+    from pandas.core.groupby import (
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/groupby/__init__.py", line 1, in <module>
+    from pandas.core.groupby.generic import (
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/groupby/generic.py", line 77, in <module>
+    from pandas.core.frame import DataFrame
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/frame.py", line 182, in <module>
+    from pandas.core.generic import NDFrame
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/generic.py", line 179, in <module>
+    from pandas.core.window import (
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/window/__init__.py", line 1, in <module>
+    from pandas.core.window.ewm import (
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/core/window/ewm.py", line 11, in <module>
+    import pandas._libs.window.aggregations as window_aggregations
+ImportError: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by /jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/pandas/_libs/window/aggregations.cpython-38-x86_64-linux-gnu.so)
+[2024-02-12 17:58:30,711] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 29912) of binary: /jet/home/mmisra/.conda/envs/benchmark/bin/python
+Traceback (most recent call last):
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/runpy.py", line 192, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 816, in <module>
+    main()
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/jet/home/mmisra/.conda/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+run_glue.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-02-12_17:58:30
+  host      : v003.ib.bridges2.psc.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 29913)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-02-12_17:58:30
+  host      : v003.ib.bridges2.psc.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 29912)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: v003: task 0: Exited with exit code 1
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "run_glue.py", line 32, in <module>
+    import transformers
+ModuleNotFoundError: No module named 'transformers'
+  File "run_glue.py", line 32, in <module>
+    import transformers
+ModuleNotFoundError: No module named 'transformers'
+[2024-02-12 18:14:11,567] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 69372) of binary: /jet/home/mmisra/miniconda3/envs/benchmark/bin/python
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 192, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 816, in <module>
+    main()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+run_glue.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-02-12_18:14:11
+  host      : v003.ib.bridges2.psc.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 69373)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-02-12_18:14:11
+  host      : v003.ib.bridges2.psc.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 69372)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: v003: task 0: Exited with exit code 1
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Traceback (most recent call last):
+  File "run_glue.py", line 52, in <module>
+    check_min_version("4.38.0.dev0")
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/__init__.py", line 244, in check_min_version
+Traceback (most recent call last):
+    raise ImportError(
+ImportError: This example requires a source install from HuggingFace Transformers (see `https://huggingface.co/docs/transformers/installation#install-from-source`), but the version found is 4.37.2.
+Check out https://github.com/huggingface/transformers/tree/main/examples#important-note for the examples corresponding to other versions of HuggingFace Transformers.
+  File "run_glue.py", line 52, in <module>
+    check_min_version("4.38.0.dev0")
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/__init__.py", line 244, in check_min_version
+    raise ImportError(
+ImportError: This example requires a source install from HuggingFace Transformers (see `https://huggingface.co/docs/transformers/installation#install-from-source`), but the version found is 4.37.2.
+Check out https://github.com/huggingface/transformers/tree/main/examples#important-note for the examples corresponding to other versions of HuggingFace Transformers.
+[2024-02-12 18:15:30,787] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 69451) of binary: /jet/home/mmisra/miniconda3/envs/benchmark/bin/python
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 192, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 816, in <module>
+    main()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+run_glue.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-02-12_18:15:30
+  host      : v003.ib.bridges2.psc.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 69452)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-02-12_18:15:30
+  host      : v003.ib.bridges2.psc.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 69451)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: v003: task 0: Exited with exit code 1
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+02/12/2024 18:21:14 - WARNING - __main__ - Process rank: 0, device: cuda:0, n_gpu: 1, distributed training: True, 16-bits training: False
+02/12/2024 18:21:14 - INFO - __main__ - Training/evaluation parameters TrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+bf16=False,
+bf16_full_eval=False,
+data_seed=None,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+dispatch_batches=None,
+do_eval=True,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=no,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+fsdp=[],
+fsdp_config={'min_num_params': 0, 'xla': False, 'xla_fsdp_grad_ckpt': False},
+fsdp_min_num_params=0,
+fsdp_transformer_layer_cls_to_wrap=None,
+full_determinism=False,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+gradient_checkpointing_kwargs=None,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=False,
+hub_strategy=every_save,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+include_inputs_for_metrics=False,
+include_num_input_tokens_seen=False,
+include_tokens_per_second=False,
+jit_mode_eval=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=5e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=0,
+log_level=passive,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/runs/Feb12_18-21-13_v003.ib.bridges2.psc.edu,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=steps,
+lr_scheduler_kwargs={},
+lr_scheduler_type=linear,
+max_grad_norm=1.0,
+max_steps=-1,
+metric_for_best_model=None,
+mp_parameters=,
+neftune_noise_alpha=None,
+no_cuda=False,
+num_train_epochs=3.0,
+optim=adamw_torch,
+optim_args=None,
+output_dir=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments,
+overwrite_output_dir=False,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=8,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+ray_scope=last,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments,
+save_on_each_node=False,
+save_only_model=False,
+save_safetensors=True,
+save_steps=500,
+save_strategy=steps,
+save_total_limit=None,
+seed=42,
+skip_memory_metrics=True,
+split_batches=False,
+tf32=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torchdynamo=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_cpu=False,
+use_ipex=False,
+use_legacy_prediction_loop=False,
+use_mps_device=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+)
+02/12/2024 18:21:14 - WARNING - __main__ - Process rank: 1, device: cuda:1, n_gpu: 1, distributed training: True, 16-bits training: False
+Downloading readme:   0%|          | 0.00/35.3k [00:00<?, ?B/s]Downloading readme: 100%|██████████| 35.3k/35.3k [00:00<00:00, 9.93MB/s]
+Generating dataset glue (/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c)
+02/12/2024 18:21:16 - INFO - datasets.builder - Generating dataset glue (/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c)
+Downloading and preparing dataset glue/mrpc to /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c...
+02/12/2024 18:21:16 - INFO - datasets.builder - Downloading and preparing dataset glue/mrpc to /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c...
+Dataset not on Hf google storage. Downloading and preparing it from source
+02/12/2024 18:21:16 - INFO - datasets.builder - Dataset not on Hf google storage. Downloading and preparing it from source
+hf://datasets/glue@bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c/mrpc/train-00000-of-00001.parquet not found in cache or force_download set to True, downloading to /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/downloads/24166ebd1bccab90a45c5926ee2fc643d87daf27874140c87155d008dc3d2145.incomplete
+02/12/2024 18:21:16 - INFO - datasets.utils.file_utils - hf://datasets/glue@bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c/mrpc/train-00000-of-00001.parquet not found in cache or force_download set to True, downloading to /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/downloads/24166ebd1bccab90a45c5926ee2fc643d87daf27874140c87155d008dc3d2145.incomplete
+Downloading data:   0%|          | 0.00/649k [00:00<?, ?B/s]Downloading data: 100%|██████████| 649k/649k [00:00<00:00, 2.53MB/s]Downloading data: 100%|██████████| 649k/649k [00:00<00:00, 2.52MB/s]
+storing hf://datasets/glue@bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c/mrpc/train-00000-of-00001.parquet in cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/downloads/24166ebd1bccab90a45c5926ee2fc643d87daf27874140c87155d008dc3d2145
+02/12/2024 18:21:17 - INFO - datasets.utils.file_utils - storing hf://datasets/glue@bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c/mrpc/train-00000-of-00001.parquet in cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/downloads/24166ebd1bccab90a45c5926ee2fc643d87daf27874140c87155d008dc3d2145
+creating metadata file for /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/downloads/24166ebd1bccab90a45c5926ee2fc643d87daf27874140c87155d008dc3d2145
+02/12/2024 18:21:17 - INFO - datasets.utils.file_utils - creating metadata file for /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/downloads/24166ebd1bccab90a45c5926ee2fc643d87daf27874140c87155d008dc3d2145
+hf://datasets/glue@bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c/mrpc/validation-00000-of-00001.parquet not found in cache or force_download set to True, downloading to /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/downloads/161cbda86bd80a1f172476cb94331a5b3c8f99921a888dd4071eaca5c390be1f.incomplete
+02/12/2024 18:21:17 - INFO - datasets.utils.file_utils - hf://datasets/glue@bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c/mrpc/validation-00000-of-00001.parquet not found in cache or force_download set to True, downloading to /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/downloads/161cbda86bd80a1f172476cb94331a5b3c8f99921a888dd4071eaca5c390be1f.incomplete
+Downloading data:   0%|          | 0.00/75.7k [00:00<?, ?B/s]Downloading data: 100%|██████████| 75.7k/75.7k [00:00<00:00, 458kB/s]Downloading data: 100%|██████████| 75.7k/75.7k [00:00<00:00, 457kB/s]
+storing hf://datasets/glue@bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c/mrpc/validation-00000-of-00001.parquet in cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/downloads/161cbda86bd80a1f172476cb94331a5b3c8f99921a888dd4071eaca5c390be1f
+02/12/2024 18:21:17 - INFO - datasets.utils.file_utils - storing hf://datasets/glue@bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c/mrpc/validation-00000-of-00001.parquet in cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/downloads/161cbda86bd80a1f172476cb94331a5b3c8f99921a888dd4071eaca5c390be1f
+creating metadata file for /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/downloads/161cbda86bd80a1f172476cb94331a5b3c8f99921a888dd4071eaca5c390be1f
+02/12/2024 18:21:17 - INFO - datasets.utils.file_utils - creating metadata file for /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/downloads/161cbda86bd80a1f172476cb94331a5b3c8f99921a888dd4071eaca5c390be1f
+hf://datasets/glue@bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c/mrpc/test-00000-of-00001.parquet not found in cache or force_download set to True, downloading to /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/downloads/3fadd177c8e5bcd48c8774b1921023805a7a5413f66dde18a1f7c7692e502ff5.incomplete
+02/12/2024 18:21:17 - INFO - datasets.utils.file_utils - hf://datasets/glue@bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c/mrpc/test-00000-of-00001.parquet not found in cache or force_download set to True, downloading to /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/downloads/3fadd177c8e5bcd48c8774b1921023805a7a5413f66dde18a1f7c7692e502ff5.incomplete
+Downloading data:   0%|          | 0.00/308k [00:00<?, ?B/s]Downloading data: 100%|██████████| 308k/308k [00:00<00:00, 2.82MB/s]Downloading data: 100%|██████████| 308k/308k [00:00<00:00, 2.81MB/s]
+storing hf://datasets/glue@bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c/mrpc/test-00000-of-00001.parquet in cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/downloads/3fadd177c8e5bcd48c8774b1921023805a7a5413f66dde18a1f7c7692e502ff5
+02/12/2024 18:21:17 - INFO - datasets.utils.file_utils - storing hf://datasets/glue@bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c/mrpc/test-00000-of-00001.parquet in cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/downloads/3fadd177c8e5bcd48c8774b1921023805a7a5413f66dde18a1f7c7692e502ff5
+creating metadata file for /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/downloads/3fadd177c8e5bcd48c8774b1921023805a7a5413f66dde18a1f7c7692e502ff5
+02/12/2024 18:21:17 - INFO - datasets.utils.file_utils - creating metadata file for /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/downloads/3fadd177c8e5bcd48c8774b1921023805a7a5413f66dde18a1f7c7692e502ff5
+Downloading took 0.0 min
+02/12/2024 18:21:17 - INFO - datasets.download.download_manager - Downloading took 0.0 min
+Checksum Computation took 0.0 min
+02/12/2024 18:21:17 - INFO - datasets.download.download_manager - Checksum Computation took 0.0 min
+Generating train split
+02/12/2024 18:21:17 - INFO - datasets.builder - Generating train split
+Generating train split:   0%|          | 0/3668 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 3668/3668 [00:00<00:00, 420830.11 examples/s]
+Generating validation split
+02/12/2024 18:21:17 - INFO - datasets.builder - Generating validation split
+Generating validation split:   0%|          | 0/408 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 408/408 [00:00<00:00, 139366.07 examples/s]
+Generating test split
+02/12/2024 18:21:17 - INFO - datasets.builder - Generating test split
+Generating test split:   0%|          | 0/1725 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1725/1725 [00:00<00:00, 397144.27 examples/s]
+All the splits matched successfully.
+02/12/2024 18:21:17 - INFO - datasets.utils.info_utils - All the splits matched successfully.
+Dataset glue downloaded and prepared to /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c. Subsequent calls will reuse this data.
+02/12/2024 18:21:17 - INFO - datasets.builder - Dataset glue downloaded and prepared to /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c. Subsequent calls will reuse this data.
+config.json:   0%|          | 0.00/560 [00:00<?, ?B/s]config.json: 100%|██████████| 560/560 [00:00<00:00, 182kB/s]
+[INFO|configuration_utils.py:729] 2024-02-12 18:21:17,953 >> loading configuration file config.json from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--TinyLlama--TinyLlama-1.1B-intermediate-step-715k-1.5T/snapshots/19a81efa07bf28ec81dc4de327776fa00e34cf3f/config.json
+[INFO|configuration_utils.py:792] 2024-02-12 18:21:17,955 >> Model config LlamaConfig {
+  "_name_or_path": "TinyLlama/TinyLlama-1.1B-intermediate-step-715k-1.5T",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "finetuning_task": "mrpc",
+  "hidden_act": "silu",
+  "hidden_size": 2048,
+  "initializer_range": 0.02,
+  "intermediate_size": 5632,
+  "max_position_embeddings": 2048,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 22,
+  "num_key_value_heads": 4,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": null,
+  "rope_theta": 10000.0,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.38.0.dev0",
+  "use_cache": true,
+  "vocab_size": 32000
+}
+
+[INFO|tokenization_auto.py:607] 2024-02-12 18:21:17,981 >> Could not locate the tokenizer configuration file, will try to use the model config instead.
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 286, in hf_raise_for_status
+    response.raise_for_status()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 398, in cached_file
+    resolved_file = hf_hub_download(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1368, in hf_hub_download
+    raise head_call_error
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1238, in hf_hub_download
+    metadata = get_hf_file_metadata(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1631, in get_hf_file_metadata
+    r = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 385, in _request_wrapper
+    response = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 409, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 302, in hf_raise_for_status
+    raise GatedRepoError(message, response) from e
+huggingface_hub.utils._errors.GatedRepoError: 403 Client Error. (Request ID: Root=1-65caa7ed-713a9c0a0d5930d909a72736;6a415be7-704c-4081-b01e-30d0b00d77f4)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b-chat-hf/resolve/main/config.json.
+Access to model meta-llama/Llama-2-7b-chat-hf is restricted and you are not in the authorized list. Visit https://huggingface.co/meta-llama/Llama-2-7b-chat-hf to ask for access.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "run_glue.py", line 652, in <module>
+    main()
+  File "run_glue.py", line 393, in main
+    tokenizer = AutoTokenizer.from_pretrained(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/models/auto/tokenization_auto.py", line 774, in from_pretrained
+    config = AutoConfig.from_pretrained(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/models/auto/configuration_auto.py", line 1103, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 634, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 689, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 416, in cached_file
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-2-7b-chat-hf.
+403 Client Error. (Request ID: Root=1-65caa7ed-713a9c0a0d5930d909a72736;6a415be7-704c-4081-b01e-30d0b00d77f4)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b-chat-hf/resolve/main/config.json.
+Access to model meta-llama/Llama-2-7b-chat-hf is restricted and you are not in the authorized list. Visit https://huggingface.co/meta-llama/Llama-2-7b-chat-hf to ask for access.
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 286, in hf_raise_for_status
+    response.raise_for_status()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 398, in cached_file
+    resolved_file = hf_hub_download(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1368, in hf_hub_download
+    raise head_call_error
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1238, in hf_hub_download
+    metadata = get_hf_file_metadata(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1631, in get_hf_file_metadata
+    r = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 385, in _request_wrapper
+    response = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 409, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 302, in hf_raise_for_status
+    raise GatedRepoError(message, response) from e
+huggingface_hub.utils._errors.GatedRepoError: 403 Client Error. (Request ID: Root=1-65caa7ee-308a735b2c85df97363350de;0bbc85b1-e76f-4dd9-9000-5c8e2fc37ae7)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b-chat-hf/resolve/main/config.json.
+Access to model meta-llama/Llama-2-7b-chat-hf is restricted and you are not in the authorized list. Visit https://huggingface.co/meta-llama/Llama-2-7b-chat-hf to ask for access.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "run_glue.py", line 652, in <module>
+    main()
+  File "run_glue.py", line 393, in main
+    tokenizer = AutoTokenizer.from_pretrained(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/models/auto/tokenization_auto.py", line 774, in from_pretrained
+    config = AutoConfig.from_pretrained(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/models/auto/configuration_auto.py", line 1103, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 634, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 689, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 416, in cached_file
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-2-7b-chat-hf.
+403 Client Error. (Request ID: Root=1-65caa7ee-308a735b2c85df97363350de;0bbc85b1-e76f-4dd9-9000-5c8e2fc37ae7)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b-chat-hf/resolve/main/config.json.
+Access to model meta-llama/Llama-2-7b-chat-hf is restricted and you are not in the authorized list. Visit https://huggingface.co/meta-llama/Llama-2-7b-chat-hf to ask for access.
+[2024-02-12 18:21:19,222] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 70326 closing signal SIGTERM
+[2024-02-12 18:21:19,447] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 70325) of binary: /jet/home/mmisra/miniconda3/envs/benchmark/bin/python
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 192, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 816, in <module>
+    main()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+run_glue.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-02-12_18:21:19
+  host      : v003.ib.bridges2.psc.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 70325)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: v003: task 0: Exited with exit code 1
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+02/12/2024 18:22:09 - WARNING - __main__ - Process rank: 0, device: cuda:0, n_gpu: 1, distributed training: True, 16-bits training: False
+02/12/2024 18:22:09 - INFO - __main__ - Training/evaluation parameters TrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+bf16=False,
+bf16_full_eval=False,
+data_seed=None,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+dispatch_batches=None,
+do_eval=True,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=no,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+fsdp=[],
+fsdp_config={'min_num_params': 0, 'xla': False, 'xla_fsdp_grad_ckpt': False},
+fsdp_min_num_params=0,
+fsdp_transformer_layer_cls_to_wrap=None,
+full_determinism=False,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+gradient_checkpointing_kwargs=None,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=False,
+hub_strategy=every_save,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+include_inputs_for_metrics=False,
+include_num_input_tokens_seen=False,
+include_tokens_per_second=False,
+jit_mode_eval=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=5e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=0,
+log_level=passive,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/runs/Feb12_18-22-08_v003.ib.bridges2.psc.edu,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=steps,
+lr_scheduler_kwargs={},
+lr_scheduler_type=linear,
+max_grad_norm=1.0,
+max_steps=-1,
+metric_for_best_model=None,
+mp_parameters=,
+neftune_noise_alpha=None,
+no_cuda=False,
+num_train_epochs=3.0,
+optim=adamw_torch,
+optim_args=None,
+output_dir=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments,
+overwrite_output_dir=False,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=8,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+ray_scope=last,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments,
+save_on_each_node=False,
+save_only_model=False,
+save_safetensors=True,
+save_steps=500,
+save_strategy=steps,
+save_total_limit=None,
+seed=42,
+skip_memory_metrics=True,
+split_batches=False,
+tf32=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torchdynamo=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_cpu=False,
+use_ipex=False,
+use_legacy_prediction_loop=False,
+use_mps_device=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+)
+02/12/2024 18:22:09 - WARNING - __main__ - Process rank: 1, device: cuda:1, n_gpu: 1, distributed training: True, 16-bits training: False
+Overwrite dataset info from restored data version if exists.
+02/12/2024 18:22:15 - INFO - datasets.builder - Overwrite dataset info from restored data version if exists.
+Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+02/12/2024 18:22:15 - INFO - datasets.info - Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+Found cached dataset glue (/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c)
+02/12/2024 18:22:15 - INFO - datasets.builder - Found cached dataset glue (/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c)
+Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+02/12/2024 18:22:15 - INFO - datasets.info - Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+[INFO|configuration_utils.py:729] 2024-02-12 18:22:15,223 >> loading configuration file config.json from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--TinyLlama--TinyLlama-1.1B-intermediate-step-715k-1.5T/snapshots/19a81efa07bf28ec81dc4de327776fa00e34cf3f/config.json
+[INFO|configuration_utils.py:792] 2024-02-12 18:22:15,224 >> Model config LlamaConfig {
+  "_name_or_path": "TinyLlama/TinyLlama-1.1B-intermediate-step-715k-1.5T",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "finetuning_task": "mrpc",
+  "hidden_act": "silu",
+  "hidden_size": 2048,
+  "initializer_range": 0.02,
+  "intermediate_size": 5632,
+  "max_position_embeddings": 2048,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 22,
+  "num_key_value_heads": 4,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": null,
+  "rope_theta": 10000.0,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.38.0.dev0",
+  "use_cache": true,
+  "vocab_size": 32000
+}
+
+[INFO|tokenization_auto.py:607] 2024-02-12 18:22:15,382 >> Could not locate the tokenizer configuration file, will try to use the model config instead.
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 286, in hf_raise_for_status
+    response.raise_for_status()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 398, in cached_file
+    resolved_file = hf_hub_download(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1368, in hf_hub_download
+    raise head_call_error
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1238, in hf_hub_download
+    Traceback (most recent call last):
+metadata = get_hf_file_metadata(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1631, in get_hf_file_metadata
+    r = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 385, in _request_wrapper
+    response = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 409, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 302, in hf_raise_for_status
+      File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 286, in hf_raise_for_status
+    raise GatedRepoError(message, response) from e
+huggingface_hub.utils._errors.GatedRepoError: 403 Client Error. (Request ID: Root=1-65caa827-4f00fb861b6ed2e17779ed74;93e49200-3d9f-495a-9804-947264bfdd39)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b-chat-hf/resolve/main/config.json.
+Access to model meta-llama/Llama-2-7b-chat-hf is restricted and you are not in the authorized list. Visit https://huggingface.co/meta-llama/Llama-2-7b-chat-hf to ask for access.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "run_glue.py", line 652, in <module>
+    response.raise_for_status()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    main()
+  File "run_glue.py", line 393, in main
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 398, in cached_file
+    tokenizer = AutoTokenizer.from_pretrained(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/models/auto/tokenization_auto.py", line 774, in from_pretrained
+    resolved_file = hf_hub_download(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    config = AutoConfig.from_pretrained(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/models/auto/configuration_auto.py", line 1103, in from_pretrained
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1368, in hf_hub_download
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 634, in get_config_dict
+    raise head_call_error
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1238, in hf_hub_download
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 689, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 416, in cached_file
+metadata = get_hf_file_metadata(    
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1631, in get_hf_file_metadata
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-2-7b-chat-hf.
+403 Client Error. (Request ID: Root=1-65caa827-4f00fb861b6ed2e17779ed74;93e49200-3d9f-495a-9804-947264bfdd39)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b-chat-hf/resolve/main/config.json.
+Access to model meta-llama/Llama-2-7b-chat-hf is restricted and you are not in the authorized list. Visit https://huggingface.co/meta-llama/Llama-2-7b-chat-hf to ask for access.
+r = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 385, in _request_wrapper
+    response = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 409, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 302, in hf_raise_for_status
+    raise GatedRepoError(message, response) from e
+huggingface_hub.utils._errors.GatedRepoError: 403 Client Error. (Request ID: Root=1-65caa827-0c432c0940da1d1a7c42f964;695f6eed-f0c8-4b55-886c-db52d7a683ce)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b-chat-hf/resolve/main/config.json.
+Access to model meta-llama/Llama-2-7b-chat-hf is restricted and you are not in the authorized list. Visit https://huggingface.co/meta-llama/Llama-2-7b-chat-hf to ask for access.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "run_glue.py", line 652, in <module>
+    main()
+  File "run_glue.py", line 393, in main
+    tokenizer = AutoTokenizer.from_pretrained(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/models/auto/tokenization_auto.py", line 774, in from_pretrained
+    config = AutoConfig.from_pretrained(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/models/auto/configuration_auto.py", line 1103, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 634, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 689, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 416, in cached_file
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-2-7b-chat-hf.
+403 Client Error. (Request ID: Root=1-65caa827-0c432c0940da1d1a7c42f964;695f6eed-f0c8-4b55-886c-db52d7a683ce)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b-chat-hf/resolve/main/config.json.
+Access to model meta-llama/Llama-2-7b-chat-hf is restricted and you are not in the authorized list. Visit https://huggingface.co/meta-llama/Llama-2-7b-chat-hf to ask for access.
+[2024-02-12 18:22:16,653] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 70412 closing signal SIGTERM
+[2024-02-12 18:22:16,718] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 70411) of binary: /jet/home/mmisra/miniconda3/envs/benchmark/bin/python
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 192, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 816, in <module>
+    main()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+run_glue.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-02-12_18:22:16
+  host      : v003.ib.bridges2.psc.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 70411)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: v003: task 0: Exited with exit code 1
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+02/12/2024 18:26:25 - WARNING - __main__ - Process rank: 0, device: cuda:0, n_gpu: 1, distributed training: True, 16-bits training: False
+02/12/2024 18:26:25 - INFO - __main__ - Training/evaluation parameters TrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+bf16=False,
+bf16_full_eval=False,
+data_seed=None,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+dispatch_batches=None,
+do_eval=True,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=no,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+fsdp=[],
+fsdp_config={'min_num_params': 0, 'xla': False, 'xla_fsdp_grad_ckpt': False},
+fsdp_min_num_params=0,
+fsdp_transformer_layer_cls_to_wrap=None,
+full_determinism=False,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+gradient_checkpointing_kwargs=None,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=False,
+hub_strategy=every_save,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+include_inputs_for_metrics=False,
+include_num_input_tokens_seen=False,
+include_tokens_per_second=False,
+jit_mode_eval=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=5e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=0,
+log_level=passive,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments/runs/Feb12_18-26-25_v003.ib.bridges2.psc.edu,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=steps,
+lr_scheduler_kwargs={},
+lr_scheduler_type=linear,
+max_grad_norm=1.0,
+max_steps=-1,
+metric_for_best_model=None,
+mp_parameters=,
+neftune_noise_alpha=None,
+no_cuda=False,
+num_train_epochs=3.0,
+optim=adamw_torch,
+optim_args=None,
+output_dir=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments,
+overwrite_output_dir=False,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=8,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+ray_scope=last,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/experiments,
+save_on_each_node=False,
+save_only_model=False,
+save_safetensors=True,
+save_steps=500,
+save_strategy=steps,
+save_total_limit=None,
+seed=42,
+skip_memory_metrics=True,
+split_batches=False,
+tf32=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torchdynamo=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_cpu=False,
+use_ipex=False,
+use_legacy_prediction_loop=False,
+use_mps_device=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+)
+02/12/2024 18:26:26 - WARNING - __main__ - Process rank: 1, device: cuda:1, n_gpu: 1, distributed training: True, 16-bits training: False
+Overwrite dataset info from restored data version if exists.
+02/12/2024 18:26:27 - INFO - datasets.builder - Overwrite dataset info from restored data version if exists.
+Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+02/12/2024 18:26:27 - INFO - datasets.info - Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+Found cached dataset glue (/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c)
+02/12/2024 18:26:27 - INFO - datasets.builder - Found cached dataset glue (/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c)
+Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+02/12/2024 18:26:27 - INFO - datasets.info - Loading Dataset info from /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+[INFO|configuration_utils.py:729] 2024-02-12 18:26:27,498 >> loading configuration file config.json from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--TinyLlama--TinyLlama-1.1B-intermediate-step-715k-1.5T/snapshots/19a81efa07bf28ec81dc4de327776fa00e34cf3f/config.json
+[INFO|configuration_utils.py:792] 2024-02-12 18:26:27,499 >> Model config LlamaConfig {
+  "_name_or_path": "TinyLlama/TinyLlama-1.1B-intermediate-step-715k-1.5T",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "finetuning_task": "mrpc",
+  "hidden_act": "silu",
+  "hidden_size": 2048,
+  "initializer_range": 0.02,
+  "intermediate_size": 5632,
+  "max_position_embeddings": 2048,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 22,
+  "num_key_value_heads": 4,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": null,
+  "rope_theta": 10000.0,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.38.0.dev0",
+  "use_cache": true,
+  "vocab_size": 32000
+}
+
+[INFO|tokenization_auto.py:607] 2024-02-12 18:26:27,524 >> Could not locate the tokenizer configuration file, will try to use the model config instead.
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 286, in hf_raise_for_status
+    response.raise_for_status()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 398, in cached_file
+    resolved_file = hf_hub_download(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1368, in hf_hub_download
+    raise head_call_error
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1238, in hf_hub_download
+    metadata = get_hf_file_metadata(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1631, in get_hf_file_metadata
+    r = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 385, in _request_wrapper
+    response = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 409, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 302, in hf_raise_for_status
+    raise GatedRepoError(message, response) from e
+huggingface_hub.utils._errors.GatedRepoError: 403 Client Error. (Request ID: Root=1-65caa923-76f1a1897c337fc338f10855;6eb57897-481d-41c2-81f0-f11027cdb19a)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b-chat-hf/resolve/main/config.json.
+Your request to access model meta-llama/Llama-2-7b-chat-hf is awaiting a review from the repo authors.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "run_glue.py", line 652, in <module>
+    main()
+  File "run_glue.py", line 393, in main
+    tokenizer = AutoTokenizer.from_pretrained(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/models/auto/tokenization_auto.py", line 774, in from_pretrained
+    config = AutoConfig.from_pretrained(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/models/auto/configuration_auto.py", line 1103, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 634, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 689, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 416, in cached_file
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-2-7b-chat-hf.
+403 Client Error. (Request ID: Root=1-65caa923-76f1a1897c337fc338f10855;6eb57897-481d-41c2-81f0-f11027cdb19a)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b-chat-hf/resolve/main/config.json.
+Your request to access model meta-llama/Llama-2-7b-chat-hf is awaiting a review from the repo authors.
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 286, in hf_raise_for_status
+    response.raise_for_status()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 398, in cached_file
+    resolved_file = hf_hub_download(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1368, in hf_hub_download
+    raise head_call_error
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1238, in hf_hub_download
+    metadata = get_hf_file_metadata(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1631, in get_hf_file_metadata
+    r = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 385, in _request_wrapper
+    response = _request_wrapper(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 409, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 302, in hf_raise_for_status
+    raise GatedRepoError(message, response) from e
+huggingface_hub.utils._errors.GatedRepoError: 403 Client Error. (Request ID: Root=1-65caa923-037948b97f46d9df478c623b;3e1f0307-6bc0-43d0-bb0c-65aa085bd595)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b-chat-hf/resolve/main/config.json.
+Your request to access model meta-llama/Llama-2-7b-chat-hf is awaiting a review from the repo authors.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "run_glue.py", line 652, in <module>
+    main()
+  File "run_glue.py", line 393, in main
+    tokenizer = AutoTokenizer.from_pretrained(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/models/auto/tokenization_auto.py", line 774, in from_pretrained
+    config = AutoConfig.from_pretrained(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/models/auto/configuration_auto.py", line 1103, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 634, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/configuration_utils.py", line 689, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py", line 416, in cached_file
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-2-7b-chat-hf.
+403 Client Error. (Request ID: Root=1-65caa923-037948b97f46d9df478c623b;3e1f0307-6bc0-43d0-bb0c-65aa085bd595)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b-chat-hf/resolve/main/config.json.
+Your request to access model meta-llama/Llama-2-7b-chat-hf is awaiting a review from the repo authors.
+[2024-02-12 18:26:31,891] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 71285) of binary: /jet/home/mmisra/miniconda3/envs/benchmark/bin/python
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 192, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 816, in <module>
+    main()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+run_glue.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-02-12_18:26:31
+  host      : v003.ib.bridges2.psc.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 71286)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-02-12_18:26:31
+  host      : v003.ib.bridges2.psc.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 71285)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: v003: task 0: Exited with exit code 1

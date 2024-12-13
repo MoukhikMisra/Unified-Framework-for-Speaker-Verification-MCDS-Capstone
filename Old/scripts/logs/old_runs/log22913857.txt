@@ -1,0 +1,14 @@
+Files already downloaded and verified
+/ocean/projects/cis220031p/mmisra/miniconda3/envs/myenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Traceback (most recent call last):
+  File "train.py", line 157, in <module>
+    main(args.log_dir, loss_mode = args.loss_mode, beta_mode = args.beta_mode, latent_size = args.latent_size, num_epochs=20, target_beta_val = args.target_beta_val)
+  File "train.py", line 124, in main
+    val_metrics = get_val_metrics(model, loss_mode, val_loader)
+  File "train.py", line 98, in get_val_metrics
+    _, _metric = ae_loss(model, x)
+  File "train.py", line 24, in ae_loss
+    loss = fn(out, x) / x.shape[0]
+NameError: name 'fn' is not defined
+srun: error: v013: task 0: Exited with exit code 1

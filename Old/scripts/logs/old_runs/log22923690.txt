@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "inference.py", line 54, in <module>
+    diffusion = DiffusionModel(
+  File "/ocean/projects/cis220031p/mmisra/generative-modeling/diffusion/model.py", line 261, in __init__
+    self.posterior_variance.clamp(min =1e-20))
+AttributeError: 'NoneType' object has no attribute 'clamp'
+srun: error: v006: task 0: Exited with exit code 1

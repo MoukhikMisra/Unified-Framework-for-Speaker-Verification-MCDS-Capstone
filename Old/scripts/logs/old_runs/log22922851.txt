@@ -1,0 +1,52 @@
+/ocean/projects/cis220031p/mmisra/miniconda3/envs/myenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+  0%|          | 0/30000 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "q1_3.py", line 48, in <module>
+    train_model(
+  File "/ocean/projects/cis220031p/mmisra/generative-modeling/gan/train.py", line 110, in train_model
+    discrim_real = disc(train_batch)
+  File "/ocean/projects/cis220031p/mmisra/miniconda3/envs/myenv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/ocean/projects/cis220031p/mmisra/miniconda3/envs/myenv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+RuntimeError: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript (most recent call last):
+  File "/ocean/projects/cis220031p/mmisra/generative-modeling/gan/networks.py", line 406, in forward
+        # dimensions after passing x through self.layers.
+        ##################################################################
+        out = self.layers(x)
+              ~~~~~~~~~~~ <--- HERE
+        out = torch.sum(out, (-2, -1)).reshape(x.shape[0], -1)
+        out = self.dense(out)
+  File "/ocean/projects/cis220031p/mmisra/miniconda3/envs/myenv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 217, in forward
+    def forward(self, input):
+        for module in self:
+            input = module(input)
+                    ~~~~~~ <--- HERE
+        return input
+  File "/ocean/projects/cis220031p/mmisra/generative-modeling/gan/networks.py", line 210, in forward
+        # connection!
+        ##################################################################
+        out = self.layers(x) + x
+              ~~~~~~~~~~~ <--- HERE
+        return out
+        ##################################################################
+  File "/ocean/projects/cis220031p/mmisra/miniconda3/envs/myenv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 217, in forward
+    def forward(self, input):
+        for module in self:
+            input = module(input)
+                    ~~~~~~ <--- HERE
+        return input
+  File "/ocean/projects/cis220031p/mmisra/miniconda3/envs/myenv/lib/python3.8/site-packages/torch/nn/modules/conv.py", line 460, in forward
+    def forward(self, input: Tensor) -> Tensor:
+        return self._conv_forward(input, self.weight, self.bias)
+               ~~~~~~~~~~~~~~~~~~ <--- HERE
+  File "/ocean/projects/cis220031p/mmisra/miniconda3/envs/myenv/lib/python3.8/site-packages/torch/nn/modules/conv.py", line 456, in _conv_forward
+                            weight, bias, self.stride,
+                            _pair(0), self.dilation, self.groups)
+        return F.conv2d(input, weight, bias, self.stride,
+               ~~~~~~~~ <--- HERE
+                        self.padding, self.dilation, self.groups)
+RuntimeError: Given groups=1, weight of size [128, 128, 3, 3], expected input[256, 3, 32, 32] to have 128 channels, but got 3 channels instead
+
+  0%|          | 0/30000 [00:24<?, ?it/s]srun: error: v006: task 0: Exited with exit code 1

@@ -1,0 +1,163 @@
+Wed Mar 13 22:51:33 2024       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  Tesla V100-SXM2-32GB           On  | 00000000:89:00.0 Off |                    0 |
+| N/A   27C    P0              39W / 300W |      0MiB / 32768MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+/ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling
+START TIME: Wed Mar 13 22:51:33 EDT 2024
+MASTER_ADDR=v012 MASTER_PORT=6006 NUM_PROCESSES=1 GPUS_PER_NODE=1 NNODES=1 $SLURM_PROCID
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+03/13/2024 22:51:41 - INFO - __main__ - Distributed environment: MULTI_GPU  Backend: nccl
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda:0
+
+Mixed precision type: no
+
+loading configuration file config.json from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--datajuicer--LLaMA-1B-dj-refine-100B/snapshots/1bd6974aad6057a3e17b69fa4f818c07aedeae51/config.json
+Model config LlamaConfig {
+  "_name_or_path": "datajuicer/LLaMA-1B-dj-refine-100B",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "finetuning_task": "rte",
+  "hidden_act": "silu",
+  "hidden_size": 2048,
+  "initializer_range": 0.02,
+  "intermediate_size": 5504,
+  "max_position_embeddings": 2048,
+  "max_sequence_length": 2048,
+  "model_type": "llama",
+  "num_attention_heads": 16,
+  "num_hidden_layers": 24,
+  "num_key_value_heads": 16,
+  "pad_token_id": 32004,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 10000.0,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.39.0.dev0",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+loading file tokenizer.model from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--datajuicer--LLaMA-1B-dj-refine-100B/snapshots/1bd6974aad6057a3e17b69fa4f818c07aedeae51/tokenizer.model
+loading file tokenizer.json from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--datajuicer--LLaMA-1B-dj-refine-100B/snapshots/1bd6974aad6057a3e17b69fa4f818c07aedeae51/tokenizer.json
+loading file added_tokens.json from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--datajuicer--LLaMA-1B-dj-refine-100B/snapshots/1bd6974aad6057a3e17b69fa4f818c07aedeae51/added_tokens.json
+loading file special_tokens_map.json from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--datajuicer--LLaMA-1B-dj-refine-100B/snapshots/1bd6974aad6057a3e17b69fa4f818c07aedeae51/special_tokens_map.json
+loading file tokenizer_config.json from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--datajuicer--LLaMA-1B-dj-refine-100B/snapshots/1bd6974aad6057a3e17b69fa4f818c07aedeae51/tokenizer_config.json
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+loading weights file pytorch_model.bin from cache at /ocean/projects/cis220031p/mmisra/transformers/examples/pytorch/language-modeling/scripts/hg_cache/models--datajuicer--LLaMA-1B-dj-refine-100B/snapshots/1bd6974aad6057a3e17b69fa4f818c07aedeae51/pytorch_model.bin
+Some weights of the model checkpoint at datajuicer/LLaMA-1B-dj-refine-100B were not used when initializing LlamaForSequenceClassification: ['lm_head.weight']
+- This IS expected if you are initializing LlamaForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing LlamaForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of LlamaForSequenceClassification were not initialized from the model checkpoint at datajuicer/LLaMA-1B-dj-refine-100B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Running tokenizer on dataset:   0%|          | 0/2490 [00:00<?, ? examples/s]Running tokenizer on dataset:  40%|████      | 1000/2490 [00:00<00:00, 4214.12 examples/s]Running tokenizer on dataset:  80%|████████  | 2000/2490 [00:00<00:00, 3830.60 examples/s]Running tokenizer on dataset: 100%|██████████| 2490/2490 [00:00<00:00, 3924.28 examples/s]Running tokenizer on dataset: 100%|██████████| 2490/2490 [00:00<00:00, 3776.95 examples/s]
+Running tokenizer on dataset:   0%|          | 0/277 [00:00<?, ? examples/s]Running tokenizer on dataset: 100%|██████████| 277/277 [00:00<00:00, 2168.51 examples/s]Running tokenizer on dataset: 100%|██████████| 277/277 [00:00<00:00, 2117.73 examples/s]
+Running tokenizer on dataset:   0%|          | 0/3000 [00:00<?, ? examples/s]Running tokenizer on dataset:  33%|███▎      | 1000/3000 [00:00<00:00, 6619.87 examples/s]Running tokenizer on dataset:  67%|██████▋   | 2000/3000 [00:00<00:00, 6410.82 examples/s]Running tokenizer on dataset: 100%|██████████| 3000/3000 [00:00<00:00, 4015.91 examples/s]Running tokenizer on dataset: 100%|██████████| 3000/3000 [00:00<00:00, 4441.71 examples/s]
+03/13/2024 22:51:50 - INFO - __main__ - Sample 336 of the training set: {'input_ids': [1, 14879, 27811, 24193, 1171, 29892, 17102, 4122, 575, 8357, 29892, 1370, 9571, 28728, 393, 7786, 330, 2708, 297, 501, 29889, 29903, 29889, 3271, 26094, 29892, 10961, 1819, 322, 916, 7190, 310, 17173, 1122, 367, 13201, 322, 1033, 5948, 604, 356, 565, 1472, 29899, 8489, 4066, 19257, 14451, 29889, 1, 4122, 575, 8357, 884, 6365, 1255, 297, 670, 12032, 1048, 825, 674, 6403, 411, 278, 17140, 310, 278, 7786, 15075, 7114, 3785, 310, 4482, 4066, 19257, 322, 4482, 5161, 2039, 363, 13258, 943, 29889], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'labels': 1}.
+03/13/2024 22:51:50 - INFO - __main__ - Sample 1722 of the training set: {'input_ids': [1, 450, 5233, 2355, 967, 1472, 29899, 20675, 287, 937, 1106, 472, 1952, 297, 3158, 408, 278, 4250, 314, 294, 10018, 1283, 278, 3942, 29915, 29879, 716, 11203, 373, 278, 4275, 997, 1233, 29889, 3824, 11379, 3375, 1808, 4250, 3304, 1258, 1556, 310, 278, 22049, 1550, 278, 29871, 29953, 29899, 10874, 29899, 1025, 25519, 4094, 11203, 885, 314, 546, 287, 1048, 29889, 1987, 8750, 3792, 423, 3614, 263, 2507, 29892, 322, 1952, 3614, 1283, 2734, 29889, 450, 14000, 867, 27464, 408, 896, 5318, 411, 1952, 29889, 317, 26840, 3711, 2986, 902, 6567, 472, 697, 1298, 29892, 5432, 363, 278, 11203, 29915, 29879, 8570, 29889, 349, 7420, 368, 22301, 29892, 278, 6673, 1497, 29892, 376, 3868, 29915, 29879, 263, 5810, 29889, 940, 29915, 29879, 2355, 5810, 11029, 1213, 1, 4250, 3304, 29915, 29879, 11203, 338, 2000, 1952, 29889], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'labels': 0}.
+03/13/2024 22:51:50 - INFO - __main__ - Sample 1324 of the training set: {'input_ids': [1, 1205, 278, 16528, 15703, 5304, 1623, 373, 278, 916, 2625, 310, 385, 23023, 1848, 27836, 1048, 3692, 2661, 6405, 29892, 24506, 322, 18312, 881, 18864, 278, 395, 29955, 29900, 7284, 4312, 304, 12020, 278, 2661, 6405, 322, 278, 15899, 29871, 29947, 29900, 29900, 17873, 875, 290, 2580, 2768, 29889, 1, 29871, 29929, 29896, 29900, 28134, 6423, 297, 278, 376, 12787, 6405, 29908, 7751, 29893, 18217, 29889], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'labels': 1}.
+/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/accelerate/accelerator.py:538: FutureWarning: The `use_fp16` property is deprecated and will be removed in version 1.0 of Accelerate use `Accelerator.mixed_precision == 'fp16'` instead.
+  warnings.warn(
+03/13/2024 22:51:52 - INFO - __main__ - ***** Running training *****
+03/13/2024 22:51:52 - INFO - __main__ -   Num examples = 2490
+03/13/2024 22:51:52 - INFO - __main__ -   Num Epochs = 3
+03/13/2024 22:51:52 - INFO - __main__ -   Instantaneous batch size per device = 7
+03/13/2024 22:51:52 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 7
+03/13/2024 22:51:52 - INFO - __main__ -   Gradient Accumulation steps = 1
+03/13/2024 22:51:52 - INFO - __main__ -   Total optimization steps = 1068
+  0%|          | 0/1068 [00:00<?, ?it/s]  0%|          | 1/1068 [00:01<34:36,  1.95s/it]  0%|          | 2/1068 [00:02<20:30,  1.15s/it]  0%|          | 3/1068 [00:02<14:46,  1.20it/s]Traceback (most recent call last):
+  File "run_glue_no_trainer.py", line 668, in <module>
+    main()
+  File "run_glue_no_trainer.py", line 552, in main
+    outputs = model(**batch)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1523, in forward
+    else self._run_ddp_forward(*inputs, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1359, in _run_ddp_forward
+    return self.module(*inputs, **kwargs)  # type: ignore[index]
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/models/llama/modeling_llama.py", line 1382, in forward
+    transformer_outputs = self.model(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/models/llama/modeling_llama.py", line 1025, in forward
+    layer_outputs = decoder_layer(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/transformers/models/llama/modeling_llama.py", line 750, in forward
+    hidden_states = residual + hidden_states
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.00 MiB. GPU 0 has a total capacity of 31.74 GiB of which 9.31 MiB is free. Including non-PyTorch memory, this process has 31.73 GiB memory in use. Of the allocated memory 29.78 GiB is allocated by PyTorch, and 1.25 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+  0%|          | 3/1068 [00:03<19:56,  1.12s/it]
+[2024-03-13 22:52:00,687] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 91090) of binary: /jet/home/mmisra/miniconda3/envs/benchmark/bin/python
+Traceback (most recent call last):
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 192, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 816, in <module>
+    main()
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/jet/home/mmisra/miniconda3/envs/benchmark/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+run_glue_no_trainer.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-03-13_22:52:00
+  host      : v012.ib.bridges2.psc.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 91090)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: v012: task 0: Exited with exit code 1
+END TIME: Wed Mar 13 22:52:01 EDT 2024
